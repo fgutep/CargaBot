@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "DRV8833")(type "KiCad")(uri "S:/Desktop/Turtle Bot/TurtleBot_PCB/FootPrints/DRV8833.pretty")(options "")(descr ""))
+)
