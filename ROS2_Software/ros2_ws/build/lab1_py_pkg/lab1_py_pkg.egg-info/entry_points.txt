@@ -1,0 +1,6 @@
+[console_scripts]
+serial_bridge_zero = lab1_py_pkg.serial_bridge_zero:main
+turtle_bot_interface = lab1_py_pkg.turtle_bot_interface:main
+turtle_bot_player = lab1_py_pkg.turtle_bot_player:main
+turtle_bot_serial_bridge = lab1_py_pkg.turtle_bot_serial_bridge:main
+turtle_bot_teleop = lab1_py_pkg.turtle_bot_teleop:main

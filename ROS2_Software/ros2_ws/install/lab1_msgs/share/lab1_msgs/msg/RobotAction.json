@@ -1,0 +1,36 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "lab1_msgs/msg/RobotAction",
+      "fields": [
+        {
+          "name": "action",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "timestamp",
+          "type": {
+            "type_id": 11,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "lab1_msgs/msg/RobotAction",
+      "hash_string": "RIHS01_da797fa8f0f5be0032e33ebe51d0742c667e9405f5bc5b51ab2eb55f39072af2"
+    }
+  ]
+}

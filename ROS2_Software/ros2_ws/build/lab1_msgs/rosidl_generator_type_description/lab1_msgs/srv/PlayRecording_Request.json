@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "lab1_msgs/srv/PlayRecording_Request",
+      "fields": [
+        {
+          "name": "filename",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "lab1_msgs/srv/PlayRecording_Request",
+      "hash_string": "RIHS01_8d480cc3d61c962f2bdf26e99a5b4ee411bbd92579f54ac439b7808f838c616b"
+    }
+  ]
+}

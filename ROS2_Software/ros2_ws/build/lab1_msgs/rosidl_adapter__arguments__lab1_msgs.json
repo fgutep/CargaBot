@@ -1,0 +1,7 @@
+{
+  "package_name": "lab1_msgs",
+  "non_idl_tuples": [
+    "/home/felipe/Desktop/Robotica_Proy/CargaBot/ROS2_Software/ros2_ws/src/lab1_msgs:msg/RobotAction.msg",
+    "/home/felipe/Desktop/Robotica_Proy/CargaBot/ROS2_Software/ros2_ws/src/lab1_msgs:srv/PlayRecording.srv"
+  ]
+}

@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from lab1_msgs/msg/RobotAction.msg
+// generated code does not contain a copyright notice
+
+
+module lab1_msgs {
+  module msg {
+    struct RobotAction {
+      string action;
+
+      double timestamp;
+    };
+  };
+};
