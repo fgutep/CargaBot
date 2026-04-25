@@ -1,0 +1,27 @@
+[0.013s] Invoking command in '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/src/lab1_msgs -DCMAKE_INSTALL_PREFIX=/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs
+[0.034s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.349s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.353s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.398s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.444s] -- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.444s] -- Found std_msgs: 5.3.7 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.823s] CMake Error: File /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/src/lab1_msgs/package.xml does not exist.
+[0.823s] CMake Error at /opt/ros/jazzy/share/ament_cmake_core/cmake/core/stamp.cmake:24 (configure_file):
+[0.823s]   configure_file Problem configuring file
+[0.823s] Call Stack (most recent call first):
+[0.824s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:73 (stamp)
+[0.824s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[0.824s]   /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:220 (ament_package_xml)
+[0.824s]   CMakeLists.txt:14 (rosidl_generate_interfaces)
+[0.824s] 
+[0.824s] 
+[0.824s] CMake Error at /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:223 (message):
+[0.824s]   Packages installing interfaces must include
+[0.824s]   '<member_of_group>rosidl_interface_packages</member_of_group>' in their
+[0.824s]   package.xml
+[0.824s] Call Stack (most recent call first):
+[0.824s]   CMakeLists.txt:14 (rosidl_generate_interfaces)
+[0.824s] 
+[0.825s] 
+[0.825s] -- Configuring incomplete, errors occurred!
+[0.834s] Invoked command in '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/src/lab1_msgs -DCMAKE_INSTALL_PREFIX=/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs

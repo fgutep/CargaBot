@@ -1,0 +1,440 @@
+[0.000000] (-) TimerEvent: {}
+[0.000363] (lab1_msgs) JobQueued: {'identifier': 'lab1_msgs', 'dependencies': OrderedDict()}
+[0.000665] (lab1_py_pkg) JobQueued: {'identifier': 'lab1_py_pkg', 'dependencies': OrderedDict({'lab1_msgs': '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs'})}
+[0.000863] (lab1_msgs) JobStarted: {'identifier': 'lab1_msgs'}
+[0.010527] (lab1_msgs) JobProgress: {'identifier': 'lab1_msgs', 'progress': 'cmake'}
+[0.011525] (lab1_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/src/lab1_msgs', '-DCMAKE_INSTALL_PREFIX=/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs'], 'cwd': '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'jffg', 'SSH_CLIENT': '192.168.0.104 32840 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/jffg', 'OLDPWD': '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/jffg/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'jffg', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-ghostty', 'XDG_SESSION_ID': '7', 'PATH': '/home/jffg/.local/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/jffg/ros2_ws/install/rplidar_ros:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.0.104 32840 192.168.0.102 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/jffg/ros2_ws/install/rplidar_ros:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.036245] (lab1_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.099707] (-) TimerEvent: {}
+[0.200095] (-) TimerEvent: {}
+[0.300431] (-) TimerEvent: {}
+[0.349527] (lab1_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[0.352585] (lab1_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.396928] (lab1_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.400502] (-) TimerEvent: {}
+[0.441418] (lab1_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[0.443813] (lab1_msgs) StdoutLine: {'line': b'-- Found std_msgs: 5.3.7 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[0.500599] (-) TimerEvent: {}
+[0.600918] (-) TimerEvent: {}
+[0.701218] (-) TimerEvent: {}
+[0.801530] (-) TimerEvent: {}
+[0.901862] (-) TimerEvent: {}
+[1.002199] (-) TimerEvent: {}
+[1.102551] (-) TimerEvent: {}
+[1.202890] (-) TimerEvent: {}
+[1.303211] (-) TimerEvent: {}
+[1.400527] (lab1_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[1.403288] (-) TimerEvent: {}
+[1.503569] (-) TimerEvent: {}
+[1.603945] (-) TimerEvent: {}
+[1.704314] (-) TimerEvent: {}
+[1.804688] (-) TimerEvent: {}
+[1.905046] (-) TimerEvent: {}
+[2.005362] (-) TimerEvent: {}
+[2.101382] (lab1_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.105425] (-) TimerEvent: {}
+[2.205690] (-) TimerEvent: {}
+[2.306021] (-) TimerEvent: {}
+[2.406383] (-) TimerEvent: {}
+[2.506753] (-) TimerEvent: {}
+[2.607085] (-) TimerEvent: {}
+[2.707434] (-) TimerEvent: {}
+[2.807842] (-) TimerEvent: {}
+[2.908189] (-) TimerEvent: {}
+[3.008524] (-) TimerEvent: {}
+[3.017071] (lab1_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.025073] (lab1_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[3.108647] (-) TimerEvent: {}
+[3.208980] (-) TimerEvent: {}
+[3.225325] (lab1_msgs) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[3.309093] (-) TimerEvent: {}
+[3.409417] (-) TimerEvent: {}
+[3.509762] (-) TimerEvent: {}
+[3.610232] (-) TimerEvent: {}
+[3.710678] (-) TimerEvent: {}
+[3.811215] (-) TimerEvent: {}
+[3.911525] (-) TimerEvent: {}
+[4.011885] (-) TimerEvent: {}
+[4.041265] (lab1_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[4.112004] (-) TimerEvent: {}
+[4.178650] (lab1_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[4.196852] (lab1_msgs) StdoutLine: {'line': b'-- Configuring done (4.2s)\n'}
+[4.212097] (-) TimerEvent: {}
+[4.263220] (lab1_msgs) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[4.281654] (lab1_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs\n'}
+[4.296883] (lab1_msgs) CommandEnded: {'returncode': 0}
+[4.297668] (lab1_msgs) JobProgress: {'identifier': 'lab1_msgs', 'progress': 'build'}
+[4.298437] (lab1_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs', '--', '-j4', '-l4'], 'cwd': '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'jffg', 'SSH_CLIENT': '192.168.0.104 32840 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/jffg', 'OLDPWD': '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/jffg/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'jffg', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-ghostty', 'XDG_SESSION_ID': '7', 'PATH': '/home/jffg/.local/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/jffg/ros2_ws/install/rplidar_ros:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.0.104 32840 192.168.0.102 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/jffg/ros2_ws/install/rplidar_ros:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[4.312221] (-) TimerEvent: {}
+[4.385994] (lab1_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating Rust code for ROS interfaces\x1b[0m\n'}
+[4.386347] (lab1_msgs) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[4.400969] (lab1_msgs) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_copy_lab1_msgs\n'}
+[4.412321] (-) TimerEvent: {}
+[4.512650] (-) TimerEvent: {}
+[4.612971] (-) TimerEvent: {}
+[4.713295] (-) TimerEvent: {}
+[4.750029] (lab1_msgs) StdoutLine: {'line': b'[  4%] Built target lab1_msgs__rosidl_generator_type_description\n'}
+[4.755782] (lab1_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[4.757762] (lab1_msgs) StdoutLine: {'line': b'creating lab1_msgs.egg-info\n'}
+[4.773743] (lab1_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[4.795010] (lab1_msgs) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[4.796426] (lab1_msgs) StdoutLine: {'line': b'writing lab1_msgs.egg-info/PKG-INFO\n'}
+[4.796985] (lab1_msgs) StdoutLine: {'line': b'writing dependency_links to lab1_msgs.egg-info/dependency_links.txt\n'}
+[4.798134] (lab1_msgs) StdoutLine: {'line': b'writing top-level names to lab1_msgs.egg-info/top_level.txt\n'}
+[4.798369] (lab1_msgs) StdoutLine: {'line': b"writing manifest file 'lab1_msgs.egg-info/SOURCES.txt'\n"}
+[4.813409] (-) TimerEvent: {}
+[4.887712] (lab1_msgs) StdoutLine: {'line': b'[  8%] Built target lab1_msgs__rs\n'}
+[4.911919] (lab1_msgs) StdoutLine: {'line': b"reading manifest file 'lab1_msgs.egg-info/SOURCES.txt'\n"}
+[4.913309] (lab1_msgs) StdoutLine: {'line': b"writing manifest file 'lab1_msgs.egg-info/SOURCES.txt'\n"}
+[4.913593] (-) TimerEvent: {}
+[5.011461] (lab1_msgs) StdoutLine: {'line': b'[  8%] Built target ament_cmake_python_build_lab1_msgs_egg\n'}
+[5.013748] (-) TimerEvent: {}
+[5.114128] (-) TimerEvent: {}
+[5.214413] (-) TimerEvent: {}
+[5.316165] (-) TimerEvent: {}
+[5.380453] (lab1_msgs) StdoutLine: {'line': b'[  8%] Built target lab1_msgs__cpp\n'}
+[5.416283] (-) TimerEvent: {}
+[5.429091] (lab1_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/lab1_msgs__rosidl_generator_c.dir/rosidl_generator_c/lab1_msgs/srv/detail/play_recording__description.c.o\x1b[0m\n'}
+[5.431724] (lab1_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/lab1_msgs__rosidl_generator_c.dir/rosidl_generator_c/lab1_msgs/msg/detail/robot_action__description.c.o\x1b[0m\n'}
+[5.432084] (lab1_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/lab1_msgs__rosidl_generator_c.dir/rosidl_generator_c/lab1_msgs/msg/detail/robot_action__type_support.c.o\x1b[0m\n'}
+[5.432255] (lab1_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/lab1_msgs__rosidl_generator_c.dir/rosidl_generator_c/lab1_msgs/msg/detail/robot_action__functions.c.o\x1b[0m\n'}
+[5.517709] (-) TimerEvent: {}
+[5.522767] (lab1_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/lab1_msgs__rosidl_generator_c.dir/rosidl_generator_c/lab1_msgs/srv/detail/play_recording__functions.c.o\x1b[0m\n'}
+[5.540416] (lab1_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding C object CMakeFiles/lab1_msgs__rosidl_generator_c.dir/rosidl_generator_c/lab1_msgs/srv/detail/play_recording__type_support.c.o\x1b[0m\n'}
+[5.617823] (-) TimerEvent: {}
+[5.645830] (lab1_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32m\x1b[1mLinking C shared library liblab1_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[5.717946] (-) TimerEvent: {}
+[5.725557] (lab1_msgs) StdoutLine: {'line': b'[ 24%] Built target lab1_msgs__rosidl_generator_c\n'}
+[5.744221] (lab1_msgs) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.744554] (lab1_msgs) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.754817] (lab1_msgs) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[5.755127] (lab1_msgs) StdoutLine: {'line': b'[ 33%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.818072] (-) TimerEvent: {}
+[5.918469] (-) TimerEvent: {}
+[6.019819] (-) TimerEvent: {}
+[6.120375] (-) TimerEvent: {}
+[6.201592] (lab1_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/lab1_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lab1_msgs/msg/robot_action__type_support.cpp.o\x1b[0m\n'}
+[6.220511] (-) TimerEvent: {}
+[6.290468] (lab1_msgs) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/lab1_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lab1_msgs/msg/detail/robot_action__type_support.cpp.o\x1b[0m\n'}
+[6.320662] (-) TimerEvent: {}
+[6.389927] (lab1_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/lab1_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab1_msgs/msg/detail/robot_action__type_support_c.cpp.o\x1b[0m\n'}
+[6.398807] (lab1_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/lab1_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lab1_msgs/msg/detail/dds_fastrtps/robot_action__type_support.cpp.o\x1b[0m\n'}
+[6.421723] (-) TimerEvent: {}
+[6.522309] (-) TimerEvent: {}
+[6.624735] (-) TimerEvent: {}
+[6.725190] (-) TimerEvent: {}
+[6.825900] (-) TimerEvent: {}
+[6.926566] (-) TimerEvent: {}
+[6.929895] (lab1_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/lab1_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lab1_msgs/srv/play_recording__type_support.cpp.o\x1b[0m\n'}
+[6.941730] (lab1_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/lab1_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lab1_msgs/srv/detail/play_recording__type_support.cpp.o\x1b[0m\n'}
+[7.026714] (-) TimerEvent: {}
+[7.129027] (-) TimerEvent: {}
+[7.229665] (-) TimerEvent: {}
+[7.314980] (lab1_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/lab1_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab1_msgs/srv/detail/play_recording__type_support_c.cpp.o\x1b[0m\n'}
+[7.329829] (-) TimerEvent: {}
+[7.364727] (lab1_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/lab1_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lab1_msgs/srv/detail/dds_fastrtps/play_recording__type_support.cpp.o\x1b[0m\n'}
+[7.429957] (-) TimerEvent: {}
+[7.530440] (-) TimerEvent: {}
+[7.630940] (-) TimerEvent: {}
+[7.708721] (lab1_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX shared library liblab1_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[7.731072] (-) TimerEvent: {}
+[7.831532] (-) TimerEvent: {}
+[7.835855] (lab1_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking CXX shared library liblab1_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[7.895167] (lab1_msgs) StdoutLine: {'line': b'[ 55%] Built target lab1_msgs__rosidl_typesupport_cpp\n'}
+[7.924744] (lab1_msgs) StdoutLine: {'line': b'[ 57%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[7.931743] (-) TimerEvent: {}
+[8.032561] (-) TimerEvent: {}
+[8.037840] (lab1_msgs) StdoutLine: {'line': b'[ 57%] Built target lab1_msgs__rosidl_typesupport_introspection_cpp\n'}
+[8.062786] (lab1_msgs) StdoutLine: {'line': b'[ 60%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[8.132693] (-) TimerEvent: {}
+[8.233265] (-) TimerEvent: {}
+[8.333828] (-) TimerEvent: {}
+[8.394914] (lab1_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking CXX shared library liblab1_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[8.433989] (-) TimerEvent: {}
+[8.534565] (-) TimerEvent: {}
+[8.579519] (lab1_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/lab1_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/lab1_msgs/msg/robot_action__type_support.cpp.o\x1b[0m\n'}
+[8.599535] (lab1_msgs) StdoutLine: {'line': b'[ 64%] Built target lab1_msgs__rosidl_typesupport_fastrtps_c\n'}
+[8.604810] (lab1_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding C object CMakeFiles/lab1_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lab1_msgs/msg/detail/robot_action__type_support.c.o\x1b[0m\n'}
+[8.634683] (-) TimerEvent: {}
+[8.640212] (lab1_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding C object CMakeFiles/lab1_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lab1_msgs/srv/detail/play_recording__type_support.c.o\x1b[0m\n'}
+[8.687551] (lab1_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/lab1_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/lab1_msgs/srv/play_recording__type_support.cpp.o\x1b[0m\n'}
+[8.734801] (-) TimerEvent: {}
+[8.742773] (lab1_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32m\x1b[1mLinking CXX shared library liblab1_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[8.783741] (lab1_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking C shared library liblab1_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[8.794695] (lab1_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library liblab1_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[8.834995] (-) TimerEvent: {}
+[8.869704] (lab1_msgs) StdoutLine: {'line': b'[ 77%] Built target lab1_msgs__rosidl_typesupport_introspection_c\n'}
+[8.892088] (lab1_msgs) StdoutLine: {'line': b'[ 77%] Built target lab1_msgs__rosidl_typesupport_c\n'}
+[8.918945] (lab1_msgs) StdoutLine: {'line': b'[ 77%] Built target lab1_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[8.935071] (-) TimerEvent: {}
+[8.954122] (lab1_msgs) StdoutLine: {'line': b'[ 77%] Built target lab1_msgs\n'}
+[8.989896] (lab1_msgs) StdoutLine: {'line': b'[ 80%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[9.035170] (-) TimerEvent: {}
+[9.135463] (-) TimerEvent: {}
+[9.235789] (-) TimerEvent: {}
+[9.336082] (-) TimerEvent: {}
+[9.436369] (-) TimerEvent: {}
+[9.536680] (-) TimerEvent: {}
+[9.580332] (lab1_msgs) StdoutLine: {'line': b'[ 80%] Built target lab1_msgs__py\n'}
+[9.615006] (lab1_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/lab1_msgs__rosidl_generator_py.dir/rosidl_generator_py/lab1_msgs/srv/_play_recording_s.c.o\x1b[0m\n'}
+[9.615317] (lab1_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/lab1_msgs__rosidl_generator_py.dir/rosidl_generator_py/lab1_msgs/msg/_robot_action_s.c.o\x1b[0m\n'}
+[9.636795] (-) TimerEvent: {}
+[9.737150] (-) TimerEvent: {}
+[9.837490] (-) TimerEvent: {}
+[9.937871] (-) TimerEvent: {}
+[9.939997] (lab1_msgs) StdoutLine: {'line': b'[ 86%] \x1b[32m\x1b[1mLinking C shared library liblab1_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[10.022323] (lab1_msgs) StdoutLine: {'line': b'[ 86%] Built target lab1_msgs__rosidl_generator_py\n'}
+[10.037993] (-) TimerEvent: {}
+[10.059102] (lab1_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/lab1_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/lab1_msgs/_lab1_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[10.059433] (lab1_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/lab1_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/lab1_msgs/_lab1_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[10.059548] (lab1_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/lab1_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/lab1_msgs/_lab1_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[10.138120] (-) TimerEvent: {}
+[10.239706] (-) TimerEvent: {}
+[10.242009] (lab1_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/lab1_msgs/lab1_msgs_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[10.247371] (lab1_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/lab1_msgs/lab1_msgs_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[10.251555] (lab1_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/lab1_msgs/lab1_msgs_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[10.303771] (lab1_msgs) StdoutLine: {'line': b'[100%] Built target lab1_msgs_s__rosidl_typesupport_c\n'}
+[10.307833] (lab1_msgs) StdoutLine: {'line': b'[100%] Built target lab1_msgs_s__rosidl_typesupport_fastrtps_c\n'}
+[10.308796] (lab1_msgs) StdoutLine: {'line': b'[100%] Built target lab1_msgs_s__rosidl_typesupport_introspection_c\n'}
+[10.329699] (lab1_msgs) CommandEnded: {'returncode': 0}
+[10.330532] (lab1_msgs) JobProgress: {'identifier': 'lab1_msgs', 'progress': 'install'}
+[10.339811] (-) TimerEvent: {}
+[10.346227] (lab1_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs'], 'cwd': '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'jffg', 'SSH_CLIENT': '192.168.0.104 32840 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/jffg', 'OLDPWD': '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/jffg/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'jffg', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-ghostty', 'XDG_SESSION_ID': '7', 'PATH': '/home/jffg/.local/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/jffg/ros2_ws/install/rplidar_ros:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.0.104 32840 192.168.0.102 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/jffg/ros2_ws/install/rplidar_ros:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[10.361805] (lab1_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.362161] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/ament_index/resource_index/rosidl_interfaces/lab1_msgs\n'}
+[10.362511] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/msg/RobotAction.json\n'}
+[10.362778] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/srv/PlayRecording.json\n'}
+[10.362978] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs\n'}
+[10.363159] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg\n'}
+[10.363283] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/robot_action.h\n'}
+[10.363443] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[10.363590] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail\n'}
+[10.363730] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail/robot_action__description.c\n'}
+[10.363852] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail/robot_action__struct.h\n'}
+[10.364006] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail/robot_action__functions.h\n'}
+[10.364160] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail/robot_action__type_support.h\n'}
+[10.364305] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail/robot_action__functions.c\n'}
+[10.364453] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail/robot_action__type_support.c\n'}
+[10.364587] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv\n'}
+[10.364727] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/play_recording.h\n'}
+[10.364865] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail\n'}
+[10.364993] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail/play_recording__type_support.h\n'}
+[10.365134] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail/play_recording__type_support.c\n'}
+[10.365269] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail/play_recording__functions.h\n'}
+[10.365446] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail/play_recording__description.c\n'}
+[10.365628] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail/play_recording__functions.c\n'}
+[10.365822] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail/play_recording__struct.h\n'}
+[10.366102] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/environment/library_path.sh\n'}
+[10.366295] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/environment/library_path.dsv\n'}
+[10.366564] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/liblab1_msgs__rosidl_generator_c.so\n'}
+[10.367357] (lab1_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/liblab1_msgs__rosidl_generator_c.so" to ""\n'}
+[10.367491] (lab1_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs\n'}
+[10.367585] (lab1_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg\n'}
+[10.367718] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[10.367855] (lab1_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail\n'}
+[10.367969] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail/robot_action__rosidl_typesupport_fastrtps_c.h\n'}
+[10.368059] (lab1_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv\n'}
+[10.368168] (lab1_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail\n'}
+[10.368275] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail/play_recording__rosidl_typesupport_fastrtps_c.h\n'}
+[10.368357] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/liblab1_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[10.368798] (lab1_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/liblab1_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[10.368960] (lab1_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs\n'}
+[10.369054] (lab1_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg\n'}
+[10.369169] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[10.369265] (lab1_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail\n'}
+[10.369386] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail/robot_action__rosidl_typesupport_introspection_c.h\n'}
+[10.369474] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail/robot_action__type_support.c\n'}
+[10.369604] (lab1_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv\n'}
+[10.369722] (lab1_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail\n'}
+[10.369826] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail/play_recording__rosidl_typesupport_introspection_c.h\n'}
+[10.369909] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail/play_recording__type_support.c\n'}
+[10.370004] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/liblab1_msgs__rosidl_typesupport_introspection_c.so\n'}
+[10.370640] (lab1_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/liblab1_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[10.370778] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/liblab1_msgs__rosidl_typesupport_c.so\n'}
+[10.371372] (lab1_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/liblab1_msgs__rosidl_typesupport_c.so" to ""\n'}
+[10.371514] (lab1_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs\n'}
+[10.371608] (lab1_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg\n'}
+[10.371727] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[10.371812] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/robot_action.hpp\n'}
+[10.371931] (lab1_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail\n'}
+[10.372015] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail/robot_action__builder.hpp\n'}
+[10.372112] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail/robot_action__traits.hpp\n'}
+[10.372218] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail/robot_action__type_support.hpp\n'}
+[10.372322] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail/robot_action__struct.hpp\n'}
+[10.372447] (lab1_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv\n'}
+[10.372577] (lab1_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail\n'}
+[10.372687] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail/play_recording__builder.hpp\n'}
+[10.372776] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail/play_recording__type_support.hpp\n'}
+[10.372885] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail/play_recording__traits.hpp\n'}
+[10.372992] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail/play_recording__struct.hpp\n'}
+[10.373122] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/play_recording.hpp\n'}
+[10.373286] (lab1_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs\n'}
+[10.373422] (lab1_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg\n'}
+[10.373504] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[10.373623] (lab1_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail\n'}
+[10.373744] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail/dds_fastrtps\n'}
+[10.373881] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail/robot_action__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.374004] (lab1_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv\n'}
+[10.374088] (lab1_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail\n'}
+[10.374177] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail/play_recording__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.374297] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail/dds_fastrtps\n'}
+[10.374381] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/liblab1_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[10.375165] (lab1_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/liblab1_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[10.375361] (lab1_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs\n'}
+[10.375472] (lab1_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg\n'}
+[10.375574] (lab1_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail\n'}
+[10.375669] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail/robot_action__type_support.cpp\n'}
+[10.375780] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail/robot_action__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.375868] (lab1_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv\n'}
+[10.375992] (lab1_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail\n'}
+[10.376076] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail/play_recording__type_support.cpp\n'}
+[10.376156] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail/play_recording__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.376276] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/liblab1_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[10.376899] (lab1_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/liblab1_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[10.377036] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/liblab1_msgs__rosidl_typesupport_cpp.so\n'}
+[10.377980] (lab1_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/liblab1_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[10.378110] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/environment/pythonpath.sh\n'}
+[10.378197] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/environment/pythonpath.dsv\n'}
+[10.378281] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs-0.0.0-py3.12.egg-info\n'}
+[10.378385] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[10.378496] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[10.378609] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[10.378727] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[10.378858] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs\n'}
+[10.379002] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/msg\n'}
+[10.379116] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/msg/__init__.py\n'}
+[10.379214] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/msg/_robot_action_s.c\n'}
+[10.379353] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/msg/_robot_action.py\n'}
+[10.379486] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/__init__.py\n'}
+[10.379604] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/_lab1_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[10.379788] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/_lab1_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[10.379942] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/srv\n'}
+[10.380048] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/srv/_play_recording_s.c\n'}
+[10.380211] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/srv/_play_recording.py\n'}
+[10.380374] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/srv/__init__.py\n'}
+[10.380506] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/lab1_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[10.380808] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/_lab1_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[10.380975] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/lab1_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[10.381226] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/lab1_msgs_s__rosidl_typesupport_c.so\n'}
+[10.439908] (-) TimerEvent: {}
+[10.443711] (lab1_msgs) StdoutLine: {'line': b"Listing '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs'...\n"}
+[10.443965] (lab1_msgs) StdoutLine: {'line': b"Compiling '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/__init__.py'...\n"}
+[10.444082] (lab1_msgs) StdoutLine: {'line': b"Listing '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/msg'...\n"}
+[10.444197] (lab1_msgs) StdoutLine: {'line': b"Compiling '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/msg/__init__.py'...\n"}
+[10.444326] (lab1_msgs) StdoutLine: {'line': b"Compiling '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/msg/_robot_action.py'...\n"}
+[10.444428] (lab1_msgs) StdoutLine: {'line': b"Listing '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/srv'...\n"}
+[10.444513] (lab1_msgs) StdoutLine: {'line': b"Compiling '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/srv/__init__.py'...\n"}
+[10.444596] (lab1_msgs) StdoutLine: {'line': b"Compiling '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/srv/_play_recording.py'...\n"}
+[10.455598] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/lab1_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[10.456227] (lab1_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/lab1_msgs_s__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[10.456596] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/lab1_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[10.457175] (lab1_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/lab1_msgs_s__rosidl_typesupport_introspection_c.so" to ""\n'}
+[10.457495] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/lab1_msgs_s__rosidl_typesupport_c.so\n'}
+[10.458058] (lab1_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/lab1_msgs_s__rosidl_typesupport_c.so" to ""\n'}
+[10.458206] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/liblab1_msgs__rosidl_generator_py.so\n'}
+[10.458902] (lab1_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/liblab1_msgs__rosidl_generator_py.so" to ""\n'}
+[10.459096] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/ament_index/resource_index/rust_packages/lab1_msgs\n'}
+[10.459252] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/rust\n'}
+[10.459394] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/rust/build.rs\n'}
+[10.459507] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/rust/src\n'}
+[10.459641] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/rust/src/msg\n'}
+[10.459776] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/rust/src/msg/rmw.rs\n'}
+[10.459883] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/rust/src/lib.rs\n'}
+[10.460020] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/rust/src/srv\n'}
+[10.460146] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/rust/src/srv/rmw.rs\n'}
+[10.460251] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/rust/src/srv.rs\n'}
+[10.460396] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/rust/src/msg.rs\n'}
+[10.460518] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/rust/Cargo.toml\n'}
+[10.461329] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/msg/RobotAction.idl\n'}
+[10.461432] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/srv/PlayRecording.idl\n'}
+[10.461561] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/msg/RobotAction.msg\n'}
+[10.461666] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/srv/PlayRecording.srv\n'}
+[10.461766] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/ament_index/resource_index/package_run_dependencies/lab1_msgs\n'}
+[10.461882] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/ament_index/resource_index/parent_prefix_path/lab1_msgs\n'}
+[10.461994] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/environment/ament_prefix_path.sh\n'}
+[10.462170] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/environment/ament_prefix_path.dsv\n'}
+[10.462338] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/environment/path.sh\n'}
+[10.462504] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/environment/path.dsv\n'}
+[10.462717] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/local_setup.bash\n'}
+[10.462927] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/local_setup.sh\n'}
+[10.463174] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/local_setup.zsh\n'}
+[10.463383] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/local_setup.dsv\n'}
+[10.463585] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/package.dsv\n'}
+[10.463870] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/ament_index/resource_index/packages/lab1_msgs\n'}
+[10.464196] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/export_lab1_msgs__rosidl_generator_cExport.cmake\n'}
+[10.464432] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/export_lab1_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[10.464674] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/export_lab1_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[10.464897] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/export_lab1_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[10.465128] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/lab1_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[10.465337] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/lab1_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[10.465557] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/lab1_msgs__rosidl_typesupport_cExport.cmake\n'}
+[10.465779] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/lab1_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[10.466008] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/export_lab1_msgs__rosidl_generator_cppExport.cmake\n'}
+[10.466242] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/export_lab1_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[10.466460] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/export_lab1_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[10.466696] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/lab1_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[10.466925] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/lab1_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[10.467176] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/lab1_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[10.467385] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/lab1_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[10.467609] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/export_lab1_msgs__rosidl_generator_pyExport.cmake\n'}
+[10.467824] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/export_lab1_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[10.468031] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[10.468232] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[10.468436] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[10.468640] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[10.468852] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[10.469049] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[10.469255] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[10.469461] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/lab1_msgsConfig.cmake\n'}
+[10.469639] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/lab1_msgsConfig-version.cmake\n'}
+[10.469856] (lab1_msgs) StdoutLine: {'line': b'-- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/package.xml\n'}
+[10.473981] (lab1_msgs) CommandEnded: {'returncode': 0}
+[10.509422] (lab1_msgs) JobEnded: {'identifier': 'lab1_msgs', 'rc': 0}
+[10.510745] (lab1_py_pkg) JobStarted: {'identifier': 'lab1_py_pkg'}
+[10.540012] (-) TimerEvent: {}
+[10.640316] (-) TimerEvent: {}
+[10.740611] (-) TimerEvent: {}
+[10.841174] (-) TimerEvent: {}
+[10.941695] (-) TimerEvent: {}
+[11.042002] (-) TimerEvent: {}
+[11.142291] (-) TimerEvent: {}
+[11.242576] (-) TimerEvent: {}
+[11.342875] (-) TimerEvent: {}
+[11.443169] (-) TimerEvent: {}
+[11.543462] (-) TimerEvent: {}
+[11.643806] (-) TimerEvent: {}
+[11.675589] (lab1_py_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/lab1_py_pkg', 'build', '--build-base', '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_py_pkg/build', 'install', '--record', '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_py_pkg/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/src/lab1_py_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'jffg', 'SSH_CLIENT': '192.168.0.104 32840 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/jffg', 'OLDPWD': '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/jffg/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'jffg', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-ghostty', 'XDG_SESSION_ID': '7', 'PATH': '/home/jffg/.local/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs:/home/jffg/ros2_ws/install/rplidar_ros:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_py_pkg', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.0.104 32840 192.168.0.102 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/python3.12/site-packages:/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs:/home/jffg/ros2_ws/install/rplidar_ros:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[11.743902] (-) TimerEvent: {}
+[11.844199] (-) TimerEvent: {}
+[11.944489] (-) TimerEvent: {}
+[12.034388] (lab1_py_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[12.044560] (-) TimerEvent: {}
+[12.060554] (lab1_py_pkg) StdoutLine: {'line': b'writing ../../build/lab1_py_pkg/lab1_py_pkg.egg-info/PKG-INFO\n'}
+[12.060980] (lab1_py_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/lab1_py_pkg/lab1_py_pkg.egg-info/dependency_links.txt\n'}
+[12.063665] (lab1_py_pkg) StdoutLine: {'line': b'writing entry points to ../../build/lab1_py_pkg/lab1_py_pkg.egg-info/entry_points.txt\n'}
+[12.063871] (lab1_py_pkg) StdoutLine: {'line': b'writing requirements to ../../build/lab1_py_pkg/lab1_py_pkg.egg-info/requires.txt\n'}
+[12.064082] (lab1_py_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/lab1_py_pkg/lab1_py_pkg.egg-info/top_level.txt\n'}
+[12.118177] (lab1_py_pkg) StdoutLine: {'line': b"reading manifest file '../../build/lab1_py_pkg/lab1_py_pkg.egg-info/SOURCES.txt'\n"}
+[12.119297] (lab1_py_pkg) StdoutLine: {'line': b"writing manifest file '../../build/lab1_py_pkg/lab1_py_pkg.egg-info/SOURCES.txt'\n"}
+[12.119535] (lab1_py_pkg) StdoutLine: {'line': b'running build\n'}
+[12.119681] (lab1_py_pkg) StdoutLine: {'line': b'running build_py\n'}
+[12.120213] (lab1_py_pkg) StdoutLine: {'line': b'running install\n'}
+[12.129140] (lab1_py_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[12.144637] (-) TimerEvent: {}
+[12.156272] (lab1_py_pkg) StdoutLine: {'line': b'running install_data\n'}
+[12.156483] (lab1_py_pkg) StdoutLine: {'line': b'copying package.xml -> /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/share/lab1_py_pkg\n'}
+[12.156642] (lab1_py_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[12.184663] (lab1_py_pkg) StdoutLine: {'line': b'Copying ../../build/lab1_py_pkg/lab1_py_pkg.egg-info to /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/python3.12/site-packages/lab1_py_pkg-0.0.0-py3.12.egg-info\n'}
+[12.185840] (lab1_py_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[12.244741] (-) TimerEvent: {}
+[12.345033] (-) TimerEvent: {}
+[12.367506] (lab1_py_pkg) StdoutLine: {'line': b'Installing serial_bridge_zero script to /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/lab1_py_pkg\n'}
+[12.367785] (lab1_py_pkg) StdoutLine: {'line': b'Installing turtle_bot_interface script to /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/lab1_py_pkg\n'}
+[12.367919] (lab1_py_pkg) StdoutLine: {'line': b'Installing turtle_bot_player script to /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/lab1_py_pkg\n'}
+[12.368062] (lab1_py_pkg) StdoutLine: {'line': b'Installing turtle_bot_serial_bridge script to /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/lab1_py_pkg\n'}
+[12.368217] (lab1_py_pkg) StdoutLine: {'line': b'Installing turtle_bot_teleop script to /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/lab1_py_pkg\n'}
+[12.368639] (lab1_py_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_py_pkg/install.log'\n"}
+[12.436952] (lab1_py_pkg) CommandEnded: {'returncode': 0}
+[12.444482] (lab1_py_pkg) JobEnded: {'identifier': 'lab1_py_pkg', 'rc': 0}
+[12.445539] (-) TimerEvent: {}
+[12.445665] (-) EventReactorShutdown: {}

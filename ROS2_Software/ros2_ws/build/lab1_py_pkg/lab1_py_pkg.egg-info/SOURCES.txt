@@ -14,6 +14,7 @@ lab1_py_pkg/turtle_bot_interface.py
 lab1_py_pkg/turtle_bot_player.py
 lab1_py_pkg/turtle_bot_serial_bridge.py
 lab1_py_pkg/turtle_bot_teleop.py
+launch/cargabot.launch.py
 resource/lab1_py_pkg
 test/test_copyright.py
 test/test_flake8.py

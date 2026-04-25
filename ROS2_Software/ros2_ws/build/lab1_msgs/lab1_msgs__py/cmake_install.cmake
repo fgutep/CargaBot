@@ -1,8 +1,8 @@
-# Install script for directory: /home/felipe/Desktop/Robotica_Proy/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs/lab1_msgs__py
+# Install script for directory: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs/lab1_msgs__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/felipe/Desktop/Robotica_Proy/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

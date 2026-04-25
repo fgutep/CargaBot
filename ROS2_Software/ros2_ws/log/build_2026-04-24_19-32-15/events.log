@@ -1,0 +1,43 @@
+[0.000000] (-) TimerEvent: {}
+[0.000365] (lab1_msgs) JobQueued: {'identifier': 'lab1_msgs', 'dependencies': OrderedDict()}
+[0.000462] (lab1_py_pkg) JobQueued: {'identifier': 'lab1_py_pkg', 'dependencies': OrderedDict({'lab1_msgs': '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs'})}
+[0.000700] (lab1_msgs) JobStarted: {'identifier': 'lab1_msgs'}
+[0.010087] (lab1_msgs) JobProgress: {'identifier': 'lab1_msgs', 'progress': 'cmake'}
+[0.011101] (lab1_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/src/lab1_msgs', '-DCMAKE_INSTALL_PREFIX=/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs'], 'cwd': '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'jffg', 'SSH_CLIENT': '192.168.0.104 32840 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/jffg', 'OLDPWD': '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/jffg/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'jffg', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-ghostty', 'XDG_SESSION_ID': '7', 'PATH': '/home/jffg/.local/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/jffg/ros2_ws/install/rplidar_ros:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.0.104 32840 192.168.0.102 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/jffg/ros2_ws/install/rplidar_ros:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}), 'shell': False}
+[0.034525] (lab1_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.099719] (-) TimerEvent: {}
+[0.200090] (-) TimerEvent: {}
+[0.300438] (-) TimerEvent: {}
+[0.349869] (lab1_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[0.353282] (lab1_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.398380] (lab1_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.400505] (-) TimerEvent: {}
+[0.442431] (lab1_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[0.444859] (lab1_msgs) StdoutLine: {'line': b'-- Found std_msgs: 5.3.7 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[0.500614] (-) TimerEvent: {}
+[0.600930] (-) TimerEvent: {}
+[0.701264] (-) TimerEvent: {}
+[0.801608] (-) TimerEvent: {}
+[0.823483] (lab1_msgs) StderrLine: {'line': b'CMake Error: File /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/src/lab1_msgs/package.xml does not exist.\n'}
+[0.823862] (lab1_msgs) StderrLine: {'line': b'CMake Error at /opt/ros/jazzy/share/ament_cmake_core/cmake/core/stamp.cmake:24 (configure_file):\n'}
+[0.823967] (lab1_msgs) StderrLine: {'line': b'  configure_file Problem configuring file\n'}
+[0.824052] (lab1_msgs) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.824158] (lab1_msgs) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:73 (stamp)\n'}
+[0.824249] (lab1_msgs) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)\n'}
+[0.824338] (lab1_msgs) StderrLine: {'line': b'  /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:220 (ament_package_xml)\n'}
+[0.824418] (lab1_msgs) StderrLine: {'line': b'  CMakeLists.txt:14 (rosidl_generate_interfaces)\n'}
+[0.824496] (lab1_msgs) StderrLine: {'line': b'\n'}
+[0.824587] (lab1_msgs) StderrLine: {'line': b'\n'}
+[0.824667] (lab1_msgs) StderrLine: {'line': b'CMake Error at /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:223 (message):\n'}
+[0.824746] (lab1_msgs) StderrLine: {'line': b'  Packages installing interfaces must include\n'}
+[0.824822] (lab1_msgs) StderrLine: {'line': b"  '<member_of_group>rosidl_interface_packages</member_of_group>' in their\n"}
+[0.824900] (lab1_msgs) StderrLine: {'line': b'  package.xml\n'}
+[0.824976] (lab1_msgs) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.825053] (lab1_msgs) StderrLine: {'line': b'  CMakeLists.txt:14 (rosidl_generate_interfaces)\n'}
+[0.825142] (lab1_msgs) StderrLine: {'line': b'\n'}
+[0.825227] (lab1_msgs) StderrLine: {'line': b'\n'}
+[0.825305] (lab1_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.834181] (lab1_msgs) CommandEnded: {'returncode': 1}
+[0.834983] (lab1_msgs) JobEnded: {'identifier': 'lab1_msgs', 'rc': 1}
+[0.845748] (lab1_py_pkg) JobSkipped: {'identifier': 'lab1_py_pkg'}
+[0.845827] (-) EventReactorShutdown: {}

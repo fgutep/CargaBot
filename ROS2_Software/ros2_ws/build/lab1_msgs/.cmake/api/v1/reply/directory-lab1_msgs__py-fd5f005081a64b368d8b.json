@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "lab1_msgs__py",
+		"source" : "/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs/lab1_msgs__py"
+	}
+}

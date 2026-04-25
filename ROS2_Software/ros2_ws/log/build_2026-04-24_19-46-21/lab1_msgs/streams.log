@@ -1,0 +1,199 @@
+[0.014s] Invoking command in '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs -- -j4 -l4
+[0.104s] [  2%] Built target lab1_msgs__rs
+[0.104s] [  4%] Built target lab1_msgs__rosidl_generator_type_description
+[0.120s] [  4%] Built target ament_cmake_python_copy_lab1_msgs
+[0.140s] [  6%] Built target lab1_msgs__cpp
+[0.147s] [ 24%] Built target lab1_msgs__rosidl_generator_c
+[0.190s] [ 35%] Built target lab1_msgs__rosidl_typesupport_fastrtps_cpp
+[0.192s] [ 42%] Built target lab1_msgs__rosidl_typesupport_introspection_cpp
+[0.197s] [ 51%] Built target lab1_msgs__rosidl_typesupport_cpp
+[0.237s] [ 62%] Built target lab1_msgs__rosidl_typesupport_fastrtps_c
+[0.240s] [ 68%] Built target lab1_msgs__rosidl_typesupport_introspection_c
+[0.241s] [ 77%] Built target lab1_msgs__rosidl_typesupport_c
+[0.278s] [ 77%] Built target lab1_msgs
+[0.314s] [ 80%] Built target lab1_msgs__py
+[0.354s] [ 86%] Built target lab1_msgs__rosidl_generator_py
+[0.400s] [ 95%] Built target lab1_msgs_s__rosidl_typesupport_fastrtps_c
+[0.401s] [ 95%] Built target lab1_msgs_s__rosidl_typesupport_c
+[0.404s] [100%] Built target lab1_msgs_s__rosidl_typesupport_introspection_c
+[0.486s] running egg_info
+[0.514s] writing lab1_msgs.egg-info/PKG-INFO
+[0.514s] writing dependency_links to lab1_msgs.egg-info/dependency_links.txt
+[0.517s] writing top-level names to lab1_msgs.egg-info/top_level.txt
+[0.598s] reading manifest file 'lab1_msgs.egg-info/SOURCES.txt'
+[0.599s] writing manifest file 'lab1_msgs.egg-info/SOURCES.txt'
+[0.663s] [100%] Built target ament_cmake_python_build_lab1_msgs_egg
+[0.685s] Invoked command in '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs -- -j4 -l4
+[0.703s] Invoking command in '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs
+[0.718s] -- Install configuration: ""
+[0.718s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/ament_index/resource_index/rosidl_interfaces/lab1_msgs
+[0.718s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/msg/RobotAction.json
+[0.718s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/srv/PlayRecording.json
+[0.718s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs
+[0.718s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg
+[0.718s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/robot_action.h
+[0.719s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/rosidl_generator_c__visibility_control.h
+[0.719s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail
+[0.721s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail/robot_action__description.c
+[0.721s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail/robot_action__struct.h
+[0.721s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail/robot_action__functions.h
+[0.721s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail/robot_action__type_support.h
+[0.721s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail/robot_action__functions.c
+[0.721s] -- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail/robot_action__type_support.c
+[0.722s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv
+[0.722s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/play_recording.h
+[0.722s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail
+[0.722s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail/play_recording__type_support.h
+[0.722s] -- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail/play_recording__type_support.c
+[0.722s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail/play_recording__functions.h
+[0.722s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail/play_recording__description.c
+[0.722s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail/play_recording__functions.c
+[0.722s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail/play_recording__struct.h
+[0.722s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/environment/library_path.sh
+[0.723s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/environment/library_path.dsv
+[0.723s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/liblab1_msgs__rosidl_generator_c.so
+[0.723s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs
+[0.723s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg
+[0.723s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.723s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail
+[0.723s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail/robot_action__rosidl_typesupport_fastrtps_c.h
+[0.723s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv
+[0.723s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail
+[0.723s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail/play_recording__rosidl_typesupport_fastrtps_c.h
+[0.724s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/liblab1_msgs__rosidl_typesupport_fastrtps_c.so
+[0.724s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs
+[0.724s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg
+[0.724s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.724s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail
+[0.724s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail/robot_action__rosidl_typesupport_introspection_c.h
+[0.724s] -- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail/robot_action__type_support.c
+[0.725s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv
+[0.725s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail
+[0.725s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail/play_recording__rosidl_typesupport_introspection_c.h
+[0.725s] -- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail/play_recording__type_support.c
+[0.725s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/liblab1_msgs__rosidl_typesupport_introspection_c.so
+[0.725s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/liblab1_msgs__rosidl_typesupport_c.so
+[0.725s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs
+[0.725s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg
+[0.725s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[0.726s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/robot_action.hpp
+[0.726s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail
+[0.726s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail/robot_action__builder.hpp
+[0.726s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail/robot_action__traits.hpp
+[0.726s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail/robot_action__type_support.hpp
+[0.726s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail/robot_action__struct.hpp
+[0.726s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv
+[0.727s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail
+[0.727s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail/play_recording__builder.hpp
+[0.727s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail/play_recording__type_support.hpp
+[0.727s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail/play_recording__traits.hpp
+[0.727s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail/play_recording__struct.hpp
+[0.727s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/play_recording.hpp
+[0.727s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs
+[0.728s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg
+[0.728s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.728s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail
+[0.728s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail/dds_fastrtps
+[0.728s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail/robot_action__rosidl_typesupport_fastrtps_cpp.hpp
+[0.728s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv
+[0.729s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail
+[0.729s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail/play_recording__rosidl_typesupport_fastrtps_cpp.hpp
+[0.729s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail/dds_fastrtps
+[0.729s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/liblab1_msgs__rosidl_typesupport_fastrtps_cpp.so
+[0.729s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs
+[0.729s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg
+[0.729s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail
+[0.729s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail/robot_action__type_support.cpp
+[0.729s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/msg/detail/robot_action__rosidl_typesupport_introspection_cpp.hpp
+[0.730s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv
+[0.730s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail
+[0.730s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail/play_recording__type_support.cpp
+[0.730s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/include/lab1_msgs/lab1_msgs/srv/detail/play_recording__rosidl_typesupport_introspection_cpp.hpp
+[0.730s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/liblab1_msgs__rosidl_typesupport_introspection_cpp.so
+[0.730s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/liblab1_msgs__rosidl_typesupport_cpp.so
+[0.730s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/environment/pythonpath.sh
+[0.730s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/environment/pythonpath.dsv
+[0.730s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs-0.0.0-py3.12.egg-info
+[0.731s] -- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs-0.0.0-py3.12.egg-info/top_level.txt
+[0.731s] -- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs-0.0.0-py3.12.egg-info/PKG-INFO
+[0.731s] -- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs-0.0.0-py3.12.egg-info/SOURCES.txt
+[0.732s] -- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs-0.0.0-py3.12.egg-info/dependency_links.txt
+[0.732s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs
+[0.732s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/msg
+[0.732s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/msg/__init__.py
+[0.732s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/msg/_robot_action_s.c
+[0.732s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/msg/_robot_action.py
+[0.733s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/__init__.py
+[0.733s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/_lab1_msgs_s.ep.rosidl_typesupport_c.c
+[0.733s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/_lab1_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.733s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/srv
+[0.733s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/srv/_play_recording_s.c
+[0.733s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/srv/_play_recording.py
+[0.734s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/srv/__init__.py
+[0.734s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/lab1_msgs_s__rosidl_typesupport_introspection_c.so
+[0.734s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/_lab1_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[0.734s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/lab1_msgs_s__rosidl_typesupport_fastrtps_c.so
+[0.734s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/lab1_msgs_s__rosidl_typesupport_c.so
+[0.779s] Listing '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs'...
+[0.779s] Listing '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/msg'...
+[0.779s] Listing '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/srv'...
+[0.790s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/lab1_msgs_s__rosidl_typesupport_fastrtps_c.so
+[0.790s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/lab1_msgs_s__rosidl_typesupport_introspection_c.so
+[0.790s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages/lab1_msgs/lab1_msgs_s__rosidl_typesupport_c.so
+[0.791s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/liblab1_msgs__rosidl_generator_py.so
+[0.791s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/ament_index/resource_index/rust_packages/lab1_msgs
+[0.791s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/rust
+[0.792s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/rust/build.rs
+[0.792s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/rust/src
+[0.792s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/rust/src/msg
+[0.792s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/rust/src/msg/rmw.rs
+[0.792s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/rust/src/lib.rs
+[0.792s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/rust/src/srv
+[0.792s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/rust/src/srv/rmw.rs
+[0.793s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/rust/src/srv.rs
+[0.793s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/rust/src/msg.rs
+[0.793s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/rust/Cargo.toml
+[0.793s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/msg/RobotAction.idl
+[0.793s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/srv/PlayRecording.idl
+[0.793s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/msg/RobotAction.msg
+[0.793s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/srv/PlayRecording.srv
+[0.794s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/ament_index/resource_index/package_run_dependencies/lab1_msgs
+[0.794s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/ament_index/resource_index/parent_prefix_path/lab1_msgs
+[0.794s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/environment/ament_prefix_path.sh
+[0.794s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/environment/ament_prefix_path.dsv
+[0.794s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/environment/path.sh
+[0.794s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/environment/path.dsv
+[0.794s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/local_setup.bash
+[0.794s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/local_setup.sh
+[0.794s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/local_setup.zsh
+[0.795s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/local_setup.dsv
+[0.795s] -- Installing: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/package.dsv
+[0.795s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/ament_index/resource_index/packages/lab1_msgs
+[0.795s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/export_lab1_msgs__rosidl_generator_cExport.cmake
+[0.795s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/export_lab1_msgs__rosidl_generator_cExport-noconfig.cmake
+[0.795s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/export_lab1_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[0.795s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/export_lab1_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[0.795s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/lab1_msgs__rosidl_typesupport_introspection_cExport.cmake
+[0.796s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/lab1_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.796s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/lab1_msgs__rosidl_typesupport_cExport.cmake
+[0.796s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/lab1_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[0.796s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/export_lab1_msgs__rosidl_generator_cppExport.cmake
+[0.796s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/export_lab1_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.796s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/export_lab1_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[0.796s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/lab1_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[0.796s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/lab1_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.796s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/lab1_msgs__rosidl_typesupport_cppExport.cmake
+[0.797s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/lab1_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[0.797s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/export_lab1_msgs__rosidl_generator_pyExport.cmake
+[0.797s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/export_lab1_msgs__rosidl_generator_pyExport-noconfig.cmake
+[0.797s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/rosidl_cmake-extras.cmake
+[0.797s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.797s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.797s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[0.797s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[0.797s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.798s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.798s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/lab1_msgsConfig.cmake
+[0.798s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/cmake/lab1_msgsConfig-version.cmake
+[0.798s] -- Up-to-date: /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/package.xml
+[0.799s] Invoked command in '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs

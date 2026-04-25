@@ -1,0 +1,39 @@
+[0.015s] Invoking command in '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/src/lab1_msgs -DCMAKE_INSTALL_PREFIX=/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs
+[0.499s] -- The C compiler identification is GNU 13.3.0
+[0.873s] -- The CXX compiler identification is GNU 13.3.0
+[0.914s] -- Detecting C compiler ABI info
+[1.087s] -- Detecting C compiler ABI info - done
+[1.102s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.105s] -- Detecting C compile features
+[1.106s] -- Detecting C compile features - done
+[1.121s] -- Detecting CXX compiler ABI info
+[1.307s] -- Detecting CXX compiler ABI info - done
+[1.322s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.323s] -- Detecting CXX compile features
+[1.323s] -- Detecting CXX compile features - done
+[1.337s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.558s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.756s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[1.769s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.868s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.968s] -- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[1.981s] -- Found std_msgs: 5.3.7 (/opt/ros/jazzy/share/std_msgs/cmake)
+[2.409s] CMake Error: File /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/src/lab1_msgs/package.xml does not exist.
+[2.409s] CMake Error at /opt/ros/jazzy/share/ament_cmake_core/cmake/core/stamp.cmake:24 (configure_file):
+[2.409s]   configure_file Problem configuring file
+[2.409s] Call Stack (most recent call first):
+[2.409s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:73 (stamp)
+[2.410s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[2.410s]   /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:220 (ament_package_xml)
+[2.410s]   CMakeLists.txt:14 (rosidl_generate_interfaces)
+[2.410s] 
+[2.410s] 
+[2.410s] CMake Error at /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:223 (message):
+[2.410s]   Packages installing interfaces must include
+[2.410s]   '<member_of_group>rosidl_interface_packages</member_of_group>' in their
+[2.410s]   package.xml
+[2.410s] Call Stack (most recent call first):
+[2.410s]   CMakeLists.txt:14 (rosidl_generate_interfaces)
+[2.410s] 
+[2.410s] 
+[2.411s] -- Configuring incomplete, errors occurred!

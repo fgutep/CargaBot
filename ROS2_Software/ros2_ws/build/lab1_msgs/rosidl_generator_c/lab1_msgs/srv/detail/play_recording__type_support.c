@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "lab1_msgs/srv/detail/play_recording__struct.h"
-#include "lab1_msgs/srv/detail/play_recording__type_support.h"
-#include "rosidl_typesupport_interface/macros.h"
 #include "lab1_msgs/srv/detail/play_recording__functions.h"
+#include "rosidl_typesupport_interface/macros.h"
+#include "lab1_msgs/srv/detail/play_recording__type_support.h"
+#include "lab1_msgs/srv/detail/play_recording__struct.h"
 
 #ifdef __cplusplus
 extern "C"

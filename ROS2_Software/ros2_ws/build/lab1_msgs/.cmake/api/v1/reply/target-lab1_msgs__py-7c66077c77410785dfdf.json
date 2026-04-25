@@ -1,0 +1,79 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target"
+		],
+		"files" : 
+		[
+			"/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs/lab1_msgs__py/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 36,
+				"parent" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "lab1_msgs::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "lab1_msgs__py::@96ecb08eb3b9ae850450",
+	"name" : "lab1_msgs__py",
+	"paths" : 
+	{
+		"build" : "lab1_msgs__py",
+		"source" : "/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs/lab1_msgs__py"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs/lab1_msgs__py/CMakeFiles/lab1_msgs__py",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs/lab1_msgs__py/CMakeFiles/lab1_msgs__py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs/rosidl_generator_py/lab1_msgs/_lab1_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

@@ -1,0 +1,28 @@
+[1.729s] Invoking command in '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/src/lab1_py_pkg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/python3.12/site-packages:/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages:/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lab1_py_pkg build --build-base /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_py_pkg/build install --record /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_py_pkg/install.log --single-version-externally-managed install_data
+[2.118s] running egg_info
+[2.146s] writing ../../build/lab1_py_pkg/lab1_py_pkg.egg-info/PKG-INFO
+[2.149s] writing dependency_links to ../../build/lab1_py_pkg/lab1_py_pkg.egg-info/dependency_links.txt
+[2.149s] writing entry points to ../../build/lab1_py_pkg/lab1_py_pkg.egg-info/entry_points.txt
+[2.150s] writing requirements to ../../build/lab1_py_pkg/lab1_py_pkg.egg-info/requires.txt
+[2.150s] writing top-level names to ../../build/lab1_py_pkg/lab1_py_pkg.egg-info/top_level.txt
+[2.209s] reading manifest file '../../build/lab1_py_pkg/lab1_py_pkg.egg-info/SOURCES.txt'
+[2.210s] writing manifest file '../../build/lab1_py_pkg/lab1_py_pkg.egg-info/SOURCES.txt'
+[2.211s] running build
+[2.211s] running build_py
+[2.211s] copying lab1_py_pkg/turtle_bot_serial_bridge.py -> /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_py_pkg/build/lib/lab1_py_pkg
+[2.213s] running install
+[2.222s] running install_lib
+[2.251s] copying /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_py_pkg/build/lib/lab1_py_pkg/turtle_bot_serial_bridge.py -> /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/python3.12/site-packages/lab1_py_pkg
+[2.252s] byte-compiling /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/python3.12/site-packages/lab1_py_pkg/turtle_bot_serial_bridge.py to turtle_bot_serial_bridge.cpython-312.pyc
+[2.254s] running install_data
+[2.255s] running install_egg_info
+[2.285s] removing '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/python3.12/site-packages/lab1_py_pkg-0.0.0-py3.12.egg-info' (and everything under it)
+[2.287s] Copying ../../build/lab1_py_pkg/lab1_py_pkg.egg-info to /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/python3.12/site-packages/lab1_py_pkg-0.0.0-py3.12.egg-info
+[2.287s] running install_scripts
+[2.533s] Installing serial_bridge_zero script to /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/lab1_py_pkg
+[2.533s] Installing turtle_bot_interface script to /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/lab1_py_pkg
+[2.533s] Installing turtle_bot_player script to /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/lab1_py_pkg
+[2.533s] Installing turtle_bot_serial_bridge script to /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/lab1_py_pkg
+[2.534s] Installing turtle_bot_teleop script to /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/lab1_py_pkg
+[2.534s] writing list of installed files to '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_py_pkg/install.log'
+[2.627s] Invoked command in '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/src/lab1_py_pkg' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/python3.12/site-packages:/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages:/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lab1_py_pkg build --build-base /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_py_pkg/build install --record /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_py_pkg/install.log --single-version-externally-managed install_data

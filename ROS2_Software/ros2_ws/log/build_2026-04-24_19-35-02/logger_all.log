@@ -1,0 +1,207 @@
+[0.144s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.144s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff832c0560>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff8352acf0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff8352acf0>>, mixin_verb=('build',))
+[0.199s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.200s] WARNING:colcon.colcon_metadata.package_discovery.colcon_meta:Skipping metadata file '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/colcon.meta' since it doesn't contain a dict
+[0.200s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.200s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.200s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.200s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.200s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.200s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab1_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab1_msgs) by extension 'ignore'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab1_msgs) by extension 'ignore_ament_install'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab1_msgs) by extensions ['colcon_pkg']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab1_msgs) by extension 'colcon_pkg'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab1_msgs) by extensions ['colcon_meta']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab1_msgs) by extension 'colcon_meta'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab1_msgs) by extensions ['ros']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab1_msgs) by extension 'ros'
+[0.243s] DEBUG:colcon.colcon_core.package_identification:Package 'src/lab1_msgs' with type 'ros.ament_cmake' and name 'lab1_msgs'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab1_py_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab1_py_pkg) by extension 'ignore'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab1_py_pkg) by extension 'ignore_ament_install'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab1_py_pkg) by extensions ['colcon_pkg']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab1_py_pkg) by extension 'colcon_pkg'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab1_py_pkg) by extensions ['colcon_meta']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab1_py_pkg) by extension 'colcon_meta'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab1_py_pkg) by extensions ['ros']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab1_py_pkg) by extension 'ros'
+[0.245s] DEBUG:colcon.colcon_core.package_identification:Package 'src/lab1_py_pkg' with type 'ros.ament_python' and name 'lab1_py_pkg'
+[0.245s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.245s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.245s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.245s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.245s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.267s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.268s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.270s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/jffg/ros2_ws/install
+[0.272s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 290 installed packages in /opt/ros/jazzy
+[0.274s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'lab1_msgs' build argument 'cmake_args' from command line to 'None'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'lab1_msgs' build argument 'cmake_target' from command line to 'None'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'lab1_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'lab1_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'lab1_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'lab1_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'lab1_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'lab1_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'lab1_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.333s] DEBUG:colcon.colcon_core.verb:Building package 'lab1_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs', 'merge_install': False, 'path': '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/src/lab1_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'lab1_py_pkg' build argument 'cmake_args' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'lab1_py_pkg' build argument 'cmake_target' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'lab1_py_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'lab1_py_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'lab1_py_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'lab1_py_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'lab1_py_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'lab1_py_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'lab1_py_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.334s] DEBUG:colcon.colcon_core.verb:Building package 'lab1_py_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_py_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg', 'merge_install': False, 'path': '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/src/lab1_py_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.334s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.335s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.336s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/src/lab1_msgs' with build type 'ament_cmake'
+[0.336s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/src/lab1_msgs'
+[0.338s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.338s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.338s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.350s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/src/lab1_msgs -DCMAKE_INSTALL_PREFIX=/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs
+[4.632s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/src/lab1_msgs -DCMAKE_INSTALL_PREFIX=/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs
+[4.635s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs -- -j4 -l4
+[10.665s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs -- -j4 -l4
+[10.683s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs
+[10.809s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lab1_msgs)
+[10.809s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs
+[10.815s] Level 1:colcon.colcon_core.environment:checking '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs' for CMake module files
+[10.816s] Level 1:colcon.colcon_core.environment:checking '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs' for CMake config files
+[10.816s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab1_msgs', 'cmake_prefix_path')
+[10.817s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/hook/cmake_prefix_path.ps1'
+[10.818s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/hook/cmake_prefix_path.dsv'
+[10.819s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/hook/cmake_prefix_path.sh'
+[10.820s] Level 1:colcon.colcon_core.environment:checking '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib'
+[10.820s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab1_msgs', 'ld_library_path_lib')
+[10.820s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/hook/ld_library_path_lib.ps1'
+[10.821s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/hook/ld_library_path_lib.dsv'
+[10.821s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/hook/ld_library_path_lib.sh'
+[10.822s] Level 1:colcon.colcon_core.environment:checking '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/bin'
+[10.822s] Level 1:colcon.colcon_core.environment:checking '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/pkgconfig/lab1_msgs.pc'
+[10.822s] Level 1:colcon.colcon_core.environment:checking '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages'
+[10.823s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab1_msgs', 'pythonpath')
+[10.823s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/hook/pythonpath.ps1'
+[10.823s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/hook/pythonpath.dsv'
+[10.824s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/hook/pythonpath.sh'
+[10.825s] Level 1:colcon.colcon_core.environment:checking '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/bin'
+[10.825s] INFO:colcon.colcon_core.shell:Creating package script '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/package.ps1'
+[10.827s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/package.dsv'
+[10.828s] INFO:colcon.colcon_core.shell:Creating package script '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/package.sh'
+[10.829s] INFO:colcon.colcon_core.shell:Creating package script '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/package.bash'
+[10.830s] INFO:colcon.colcon_core.shell:Creating package script '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/package.zsh'
+[10.831s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/colcon-core/packages/lab1_msgs)
+[10.832s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lab1_msgs)
+[10.832s] Level 1:colcon.colcon_core.environment:checking '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs' for CMake module files
+[10.833s] Level 1:colcon.colcon_core.environment:checking '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs' for CMake config files
+[10.833s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab1_msgs', 'cmake_prefix_path')
+[10.833s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/hook/cmake_prefix_path.ps1'
+[10.834s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/hook/cmake_prefix_path.dsv'
+[10.834s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/hook/cmake_prefix_path.sh'
+[10.836s] Level 1:colcon.colcon_core.environment:checking '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib'
+[10.836s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab1_msgs', 'ld_library_path_lib')
+[10.836s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/hook/ld_library_path_lib.ps1'
+[10.837s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/hook/ld_library_path_lib.dsv'
+[10.837s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/hook/ld_library_path_lib.sh'
+[10.838s] Level 1:colcon.colcon_core.environment:checking '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/bin'
+[10.838s] Level 1:colcon.colcon_core.environment:checking '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/pkgconfig/lab1_msgs.pc'
+[10.838s] Level 1:colcon.colcon_core.environment:checking '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages'
+[10.838s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab1_msgs', 'pythonpath')
+[10.838s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/hook/pythonpath.ps1'
+[10.839s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/hook/pythonpath.dsv'
+[10.839s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/hook/pythonpath.sh'
+[10.840s] Level 1:colcon.colcon_core.environment:checking '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/bin'
+[10.841s] INFO:colcon.colcon_core.shell:Creating package script '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/package.ps1'
+[10.842s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/package.dsv'
+[10.842s] INFO:colcon.colcon_core.shell:Creating package script '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/package.sh'
+[10.843s] INFO:colcon.colcon_core.shell:Creating package script '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/package.bash'
+[10.843s] INFO:colcon.colcon_core.shell:Creating package script '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/lab1_msgs/package.zsh'
+[10.844s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/share/colcon-core/packages/lab1_msgs)
+[10.844s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/src/lab1_py_pkg' with build type 'ament_python'
+[10.844s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab1_py_pkg', 'ament_prefix_path')
+[10.845s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/share/lab1_py_pkg/hook/ament_prefix_path.ps1'
+[10.846s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/share/lab1_py_pkg/hook/ament_prefix_path.dsv'
+[10.846s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/share/lab1_py_pkg/hook/ament_prefix_path.sh'
+[10.847s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[10.847s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[11.164s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/src/lab1_py_pkg'
+[11.165s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[11.165s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[12.013s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/src/lab1_py_pkg': AMENT_PREFIX_PATH=/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/python3.12/site-packages:/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lab1_py_pkg build --build-base /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_py_pkg/build install --record /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_py_pkg/install.log --single-version-externally-managed install_data
+[12.772s] Level 1:colcon.colcon_core.environment:checking '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg' for CMake module files
+[12.772s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/src/lab1_py_pkg' returned '0': AMENT_PREFIX_PATH=/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/python3.12/site-packages:/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lab1_py_pkg build --build-base /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_py_pkg/build install --record /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_py_pkg/install.log --single-version-externally-managed install_data
+[12.773s] Level 1:colcon.colcon_core.environment:checking '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg' for CMake config files
+[12.774s] Level 1:colcon.colcon_core.environment:checking '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib'
+[12.774s] Level 1:colcon.colcon_core.environment:checking '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/bin'
+[12.774s] Level 1:colcon.colcon_core.environment:checking '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/pkgconfig/lab1_py_pkg.pc'
+[12.774s] Level 1:colcon.colcon_core.environment:checking '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/python3.12/site-packages'
+[12.774s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab1_py_pkg', 'pythonpath')
+[12.774s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/share/lab1_py_pkg/hook/pythonpath.ps1'
+[12.775s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/share/lab1_py_pkg/hook/pythonpath.dsv'
+[12.775s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/share/lab1_py_pkg/hook/pythonpath.sh'
+[12.776s] Level 1:colcon.colcon_core.environment:checking '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/bin'
+[12.776s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lab1_py_pkg)
+[12.777s] INFO:colcon.colcon_core.shell:Creating package script '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/share/lab1_py_pkg/package.ps1'
+[12.777s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/share/lab1_py_pkg/package.dsv'
+[12.778s] INFO:colcon.colcon_core.shell:Creating package script '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/share/lab1_py_pkg/package.sh'
+[12.778s] INFO:colcon.colcon_core.shell:Creating package script '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/share/lab1_py_pkg/package.bash'
+[12.779s] INFO:colcon.colcon_core.shell:Creating package script '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/share/lab1_py_pkg/package.zsh'
+[12.779s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/share/colcon-core/packages/lab1_py_pkg)
+[12.779s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[12.780s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[12.780s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[12.780s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[12.781s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[12.781s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/local_setup.ps1'
+[12.783s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/_local_setup_util_ps1.py'
+[12.785s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/setup.ps1'
+[12.786s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/local_setup.sh'
+[12.787s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/_local_setup_util_sh.py'
+[12.788s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/setup.sh'
+[12.789s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/local_setup.bash'
+[12.790s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/setup.bash'
+[12.791s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/local_setup.zsh'
+[12.792s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/setup.zsh'

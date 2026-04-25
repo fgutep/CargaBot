@@ -1,1 +1,1 @@
-geometry_msgs:lab1_msgs:python3-matplotlib:python3-tk:rclpy:std_msgs
+lab1_msgs:rclpy:std_msgs

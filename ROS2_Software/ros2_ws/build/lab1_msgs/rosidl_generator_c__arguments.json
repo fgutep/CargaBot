@@ -1,14 +1,14 @@
 {
   "package_name": "lab1_msgs",
-  "output_dir": "/home/felipe/Desktop/Robotica_Proy/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs/rosidl_generator_c/lab1_msgs",
+  "output_dir": "/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs/rosidl_generator_c/lab1_msgs",
   "template_dir": "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource",
   "idl_tuples": [
-    "/home/felipe/Desktop/Robotica_Proy/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs/rosidl_adapter/lab1_msgs:msg/RobotAction.idl",
-    "/home/felipe/Desktop/Robotica_Proy/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs/rosidl_adapter/lab1_msgs:srv/PlayRecording.idl"
+    "/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs/rosidl_adapter/lab1_msgs:msg/RobotAction.idl",
+    "/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs/rosidl_adapter/lab1_msgs:srv/PlayRecording.idl"
   ],
   "ros_interface_files": [
-    "/home/felipe/Desktop/Robotica_Proy/CargaBot/ROS2_Software/ros2_ws/src/lab1_msgs/msg/RobotAction.msg",
-    "/home/felipe/Desktop/Robotica_Proy/CargaBot/ROS2_Software/ros2_ws/src/lab1_msgs/srv/PlayRecording.srv"
+    "/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/src/lab1_msgs/msg/RobotAction.msg",
+    "/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/src/lab1_msgs/srv/PlayRecording.srv"
   ],
   "ros_interface_dependencies": [
     "std_msgs:/opt/ros/jazzy/share/std_msgs/msg/Bool.idl",
@@ -65,8 +65,8 @@
     "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
     "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/srv__type_support.c.em",
     "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
-    "/home/felipe/Desktop/Robotica_Proy/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs/rosidl_adapter/lab1_msgs/msg/RobotAction.idl",
-    "/home/felipe/Desktop/Robotica_Proy/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs/rosidl_adapter/lab1_msgs/srv/PlayRecording.idl",
+    "/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs/rosidl_adapter/lab1_msgs/msg/RobotAction.idl",
+    "/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs/rosidl_adapter/lab1_msgs/srv/PlayRecording.idl",
     "/opt/ros/jazzy/share/std_msgs/msg/Bool.idl",
     "/opt/ros/jazzy/share/std_msgs/msg/Byte.idl",
     "/opt/ros/jazzy/share/std_msgs/msg/ByteMultiArray.idl",
@@ -102,7 +102,7 @@
     "/opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl"
   ],
   "type_description_tuples": [
-    "msg/RobotAction.idl:/home/felipe/Desktop/Robotica_Proy/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs/rosidl_generator_type_description/lab1_msgs/msg/RobotAction.json",
-    "srv/PlayRecording.idl:/home/felipe/Desktop/Robotica_Proy/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs/rosidl_generator_type_description/lab1_msgs/srv/PlayRecording.json"
+    "msg/RobotAction.idl:/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs/rosidl_generator_type_description/lab1_msgs/msg/RobotAction.json",
+    "srv/PlayRecording.idl:/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs/rosidl_generator_type_description/lab1_msgs/srv/PlayRecording.json"
   ]
 }

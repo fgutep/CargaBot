@@ -1,0 +1,118 @@
+[0.000000] (-) TimerEvent: {}
+[0.000243] (lab1_msgs) JobQueued: {'identifier': 'lab1_msgs', 'dependencies': OrderedDict()}
+[0.000283] (lab1_py_pkg) JobQueued: {'identifier': 'lab1_py_pkg', 'dependencies': OrderedDict()}
+[0.000809] (lab1_msgs) JobStarted: {'identifier': 'lab1_msgs'}
+[0.007422] (lab1_py_pkg) JobStarted: {'identifier': 'lab1_py_pkg'}
+[0.012882] (lab1_msgs) JobProgress: {'identifier': 'lab1_msgs', 'progress': 'cmake'}
+[0.013654] (lab1_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/src/lab1_msgs', '-DCMAKE_INSTALL_PREFIX=/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_msgs'], 'cwd': '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'jffg', 'SSH_CLIENT': '192.168.0.104 32840 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/jffg', 'OLDPWD': '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/jffg/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'jffg', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-ghostty', 'XDG_SESSION_ID': '7', 'PATH': '/home/jffg/.local/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/jffg/ros2_ws/install/rplidar_ros:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.0.104 32840 192.168.0.102 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/jffg/ros2_ws/install/rplidar_ros:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}), 'shell': False}
+[0.099718] (-) TimerEvent: {}
+[0.200054] (-) TimerEvent: {}
+[0.300378] (-) TimerEvent: {}
+[0.400718] (-) TimerEvent: {}
+[0.500090] (lab1_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.500784] (-) TimerEvent: {}
+[0.601020] (-) TimerEvent: {}
+[0.701318] (-) TimerEvent: {}
+[0.801614] (-) TimerEvent: {}
+[0.874050] (lab1_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.901722] (-) TimerEvent: {}
+[0.914267] (lab1_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.001844] (-) TimerEvent: {}
+[1.087287] (lab1_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.101955] (-) TimerEvent: {}
+[1.102205] (lab1_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.105384] (lab1_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.106369] (lab1_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.121316] (lab1_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.202113] (-) TimerEvent: {}
+[1.240128] (lab1_py_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/lab1_py_pkg', 'build', '--build-base', '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_py_pkg/build', 'install', '--record', '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_py_pkg/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/src/lab1_py_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'jffg', 'SSH_CLIENT': '192.168.0.104 32840 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/jffg', 'OLDPWD': '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/jffg/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'jffg', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-ghostty', 'XDG_SESSION_ID': '7', 'PATH': '/home/jffg/.local/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/jffg/ros2_ws/install/rplidar_ros:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_py_pkg', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.0.104 32840 192.168.0.102 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/jffg/ros2_ws/install/rplidar_ros:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[1.302209] (-) TimerEvent: {}
+[1.307676] (lab1_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.322963] (lab1_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.323375] (lab1_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.324080] (lab1_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.337848] (lab1_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[1.402316] (-) TimerEvent: {}
+[1.502643] (-) TimerEvent: {}
+[1.558807] (lab1_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[1.602759] (-) TimerEvent: {}
+[1.636036] (lab1_py_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[1.636302] (lab1_py_pkg) StdoutLine: {'line': b'creating ../../build/lab1_py_pkg/lab1_py_pkg.egg-info\n'}
+[1.660869] (lab1_py_pkg) StdoutLine: {'line': b'writing ../../build/lab1_py_pkg/lab1_py_pkg.egg-info/PKG-INFO\n'}
+[1.661268] (lab1_py_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/lab1_py_pkg/lab1_py_pkg.egg-info/dependency_links.txt\n'}
+[1.661533] (lab1_py_pkg) StdoutLine: {'line': b'writing entry points to ../../build/lab1_py_pkg/lab1_py_pkg.egg-info/entry_points.txt\n'}
+[1.661992] (lab1_py_pkg) StdoutLine: {'line': b'writing requirements to ../../build/lab1_py_pkg/lab1_py_pkg.egg-info/requires.txt\n'}
+[1.662151] (lab1_py_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/lab1_py_pkg/lab1_py_pkg.egg-info/top_level.txt\n'}
+[1.662236] (lab1_py_pkg) StdoutLine: {'line': b"writing manifest file '../../build/lab1_py_pkg/lab1_py_pkg.egg-info/SOURCES.txt'\n"}
+[1.702857] (-) TimerEvent: {}
+[1.719751] (lab1_py_pkg) StdoutLine: {'line': b"reading manifest file '../../build/lab1_py_pkg/lab1_py_pkg.egg-info/SOURCES.txt'\n"}
+[1.720664] (lab1_py_pkg) StdoutLine: {'line': b"writing manifest file '../../build/lab1_py_pkg/lab1_py_pkg.egg-info/SOURCES.txt'\n"}
+[1.721018] (lab1_py_pkg) StdoutLine: {'line': b'running build\n'}
+[1.721197] (lab1_py_pkg) StdoutLine: {'line': b'running build_py\n'}
+[1.721367] (lab1_py_pkg) StdoutLine: {'line': b'creating /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_py_pkg/build\n'}
+[1.721561] (lab1_py_pkg) StdoutLine: {'line': b'creating /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_py_pkg/build/lib\n'}
+[1.721703] (lab1_py_pkg) StdoutLine: {'line': b'creating /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_py_pkg/build/lib/lab1_py_pkg\n'}
+[1.721844] (lab1_py_pkg) StdoutLine: {'line': b'copying lab1_py_pkg/serial_bridge_zero.py -> /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_py_pkg/build/lib/lab1_py_pkg\n'}
+[1.722005] (lab1_py_pkg) StdoutLine: {'line': b'copying lab1_py_pkg/turtle_bot_serial_bridge.py -> /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_py_pkg/build/lib/lab1_py_pkg\n'}
+[1.722220] (lab1_py_pkg) StdoutLine: {'line': b'copying lab1_py_pkg/turtle_bot_player.py -> /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_py_pkg/build/lib/lab1_py_pkg\n'}
+[1.722417] (lab1_py_pkg) StdoutLine: {'line': b'copying lab1_py_pkg/__init__.py -> /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_py_pkg/build/lib/lab1_py_pkg\n'}
+[1.722592] (lab1_py_pkg) StdoutLine: {'line': b'copying lab1_py_pkg/turtle_bot_interface.py -> /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_py_pkg/build/lib/lab1_py_pkg\n'}
+[1.722814] (lab1_py_pkg) StdoutLine: {'line': b'copying lab1_py_pkg/turtle_bot_teleop.py -> /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_py_pkg/build/lib/lab1_py_pkg\n'}
+[1.723196] (lab1_py_pkg) StdoutLine: {'line': b'running install\n'}
+[1.732302] (lab1_py_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[1.757088] (lab1_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[1.759617] (lab1_py_pkg) StdoutLine: {'line': b'creating /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/python3.12/site-packages/lab1_py_pkg\n'}
+[1.759799] (lab1_py_pkg) StdoutLine: {'line': b'copying /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_py_pkg/build/lib/lab1_py_pkg/serial_bridge_zero.py -> /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/python3.12/site-packages/lab1_py_pkg\n'}
+[1.759991] (lab1_py_pkg) StdoutLine: {'line': b'copying /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_py_pkg/build/lib/lab1_py_pkg/turtle_bot_serial_bridge.py -> /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/python3.12/site-packages/lab1_py_pkg\n'}
+[1.760175] (lab1_py_pkg) StdoutLine: {'line': b'copying /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_py_pkg/build/lib/lab1_py_pkg/turtle_bot_player.py -> /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/python3.12/site-packages/lab1_py_pkg\n'}
+[1.760338] (lab1_py_pkg) StdoutLine: {'line': b'copying /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_py_pkg/build/lib/lab1_py_pkg/__init__.py -> /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/python3.12/site-packages/lab1_py_pkg\n'}
+[1.760470] (lab1_py_pkg) StdoutLine: {'line': b'copying /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_py_pkg/build/lib/lab1_py_pkg/turtle_bot_interface.py -> /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/python3.12/site-packages/lab1_py_pkg\n'}
+[1.760652] (lab1_py_pkg) StdoutLine: {'line': b'copying /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_py_pkg/build/lib/lab1_py_pkg/turtle_bot_teleop.py -> /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/python3.12/site-packages/lab1_py_pkg\n'}
+[1.761475] (lab1_py_pkg) StdoutLine: {'line': b'byte-compiling /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/python3.12/site-packages/lab1_py_pkg/serial_bridge_zero.py to serial_bridge_zero.cpython-312.pyc\n'}
+[1.764073] (lab1_py_pkg) StdoutLine: {'line': b'byte-compiling /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/python3.12/site-packages/lab1_py_pkg/turtle_bot_serial_bridge.py to turtle_bot_serial_bridge.cpython-312.pyc\n'}
+[1.765591] (lab1_py_pkg) StdoutLine: {'line': b'byte-compiling /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/python3.12/site-packages/lab1_py_pkg/turtle_bot_player.py to turtle_bot_player.cpython-312.pyc\n'}
+[1.767587] (lab1_py_pkg) StdoutLine: {'line': b'byte-compiling /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/python3.12/site-packages/lab1_py_pkg/__init__.py to __init__.cpython-312.pyc\n'}
+[1.767839] (lab1_py_pkg) StdoutLine: {'line': b'byte-compiling /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/python3.12/site-packages/lab1_py_pkg/turtle_bot_interface.py to turtle_bot_interface.cpython-312.pyc\n'}
+[1.769390] (lab1_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.773017] (lab1_py_pkg) StdoutLine: {'line': b'byte-compiling /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/python3.12/site-packages/lab1_py_pkg/turtle_bot_teleop.py to turtle_bot_teleop.cpython-312.pyc\n'}
+[1.774565] (lab1_py_pkg) StdoutLine: {'line': b'running install_data\n'}
+[1.774712] (lab1_py_pkg) StdoutLine: {'line': b'creating /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/share\n'}
+[1.774938] (lab1_py_pkg) StdoutLine: {'line': b'creating /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/share/ament_index\n'}
+[1.775090] (lab1_py_pkg) StdoutLine: {'line': b'creating /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/share/ament_index/resource_index\n'}
+[1.775183] (lab1_py_pkg) StdoutLine: {'line': b'creating /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/share/ament_index/resource_index/packages\n'}
+[1.775295] (lab1_py_pkg) StdoutLine: {'line': b'copying resource/lab1_py_pkg -> /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/share/ament_index/resource_index/packages\n'}
+[1.775457] (lab1_py_pkg) StdoutLine: {'line': b'creating /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/share/lab1_py_pkg\n'}
+[1.775652] (lab1_py_pkg) StderrLine: {'line': b"error: can't copy 'package.xml': doesn't exist or not a regular file\n"}
+[1.802980] (-) TimerEvent: {}
+[1.830415] (lab1_py_pkg) CommandEnded: {'returncode': 1}
+[1.830807] (lab1_py_pkg) JobEnded: {'identifier': 'lab1_py_pkg', 'rc': 1}
+[1.868867] (lab1_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.903100] (-) TimerEvent: {}
+[1.968300] (lab1_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[1.981395] (lab1_msgs) StdoutLine: {'line': b'-- Found std_msgs: 5.3.7 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[2.003170] (-) TimerEvent: {}
+[2.103436] (-) TimerEvent: {}
+[2.203755] (-) TimerEvent: {}
+[2.304117] (-) TimerEvent: {}
+[2.404466] (-) TimerEvent: {}
+[2.409661] (lab1_msgs) StderrLine: {'line': b'CMake Error: File /home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/src/lab1_msgs/package.xml does not exist.\n'}
+[2.409943] (lab1_msgs) StderrLine: {'line': b'CMake Error at /opt/ros/jazzy/share/ament_cmake_core/cmake/core/stamp.cmake:24 (configure_file):\n'}
+[2.410091] (lab1_msgs) StderrLine: {'line': b'  configure_file Problem configuring file\n'}
+[2.410174] (lab1_msgs) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.410247] (lab1_msgs) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:73 (stamp)\n'}
+[2.410321] (lab1_msgs) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)\n'}
+[2.410394] (lab1_msgs) StderrLine: {'line': b'  /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:220 (ament_package_xml)\n'}
+[2.410465] (lab1_msgs) StderrLine: {'line': b'  CMakeLists.txt:14 (rosidl_generate_interfaces)\n'}
+[2.410536] (lab1_msgs) StderrLine: {'line': b'\n'}
+[2.410606] (lab1_msgs) StderrLine: {'line': b'\n'}
+[2.410676] (lab1_msgs) StderrLine: {'line': b'CMake Error at /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:223 (message):\n'}
+[2.410748] (lab1_msgs) StderrLine: {'line': b'  Packages installing interfaces must include\n'}
+[2.410831] (lab1_msgs) StderrLine: {'line': b"  '<member_of_group>rosidl_interface_packages</member_of_group>' in their\n"}
+[2.410902] (lab1_msgs) StderrLine: {'line': b'  package.xml\n'}
+[2.410999] (lab1_msgs) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.411073] (lab1_msgs) StderrLine: {'line': b'  CMakeLists.txt:14 (rosidl_generate_interfaces)\n'}
+[2.411145] (lab1_msgs) StderrLine: {'line': b'\n'}
+[2.411215] (lab1_msgs) StderrLine: {'line': b'\n'}
+[2.411285] (lab1_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.422572] (lab1_msgs) JobEnded: {'identifier': 'lab1_msgs', 'rc': 'SIGINT'}
+[2.423645] (-) EventReactorShutdown: {}

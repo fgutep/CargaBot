@@ -77,25 +77,21 @@ class TurtleBotSerialBridge(Node):
                 pass # Ignore malformed JSON or read errors during fast streaming
 
     def publish_odometry(self, data):
-        """ Parses JSON data and publishes to /odom and /turtlebot_position. """
-        x = data.get('x', 0.0)
-        y = data.get('y', 0.0)
-        th = data.get('th', 0.0)
-        
+        x  = float(data.get('x',  0.0))
+        y  = float(data.get('y',  0.0))
+        th = float(data.get('th', 0.0))
+
         current_time = self.get_clock().now().to_msg()
 
-        # 1. Publish standard Odometry message
         odom_msg = Odometry()
         odom_msg.header.stamp = current_time
         odom_msg.header.frame_id = "odom"
         odom_msg.child_frame_id = "base_link"
-        
-        # Position
+
         odom_msg.pose.pose.position.x = x
         odom_msg.pose.pose.position.y = y
         odom_msg.pose.pose.position.z = 0.0
-        
-        # Quaternion from yaw (th)
+
         odom_msg.pose.pose.orientation.x = 0.0
         odom_msg.pose.pose.orientation.y = 0.0
         odom_msg.pose.pose.orientation.z = math.sin(th / 2.0)
@@ -103,8 +99,6 @@ class TurtleBotSerialBridge(Node):
 
         self.odom_pub.publish(odom_msg)
 
-        # 2. Publish Twist position for the existing GUI Interface
-        # The GUI script maps linear.x to X and linear.y to Y
         gui_msg = Twist()
         gui_msg.linear.x = x
         gui_msg.linear.y = y

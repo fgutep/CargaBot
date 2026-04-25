@@ -1,10 +1,10 @@
 {
   "package_name": "lab1_msgs",
-  "output_dir": "/home/felipe/Desktop/Robotica_Proy/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs/rosidl_generator_py/lab1_msgs",
+  "output_dir": "/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs/rosidl_generator_py/lab1_msgs",
   "template_dir": "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource",
   "idl_tuples": [
-    "/home/felipe/Desktop/Robotica_Proy/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs/rosidl_adapter/lab1_msgs:msg/RobotAction.idl",
-    "/home/felipe/Desktop/Robotica_Proy/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs/rosidl_adapter/lab1_msgs:srv/PlayRecording.idl"
+    "/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs/rosidl_adapter/lab1_msgs:msg/RobotAction.idl",
+    "/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs/rosidl_adapter/lab1_msgs:srv/PlayRecording.idl"
   ],
   "ros_interface_dependencies": [
     "std_msgs:/opt/ros/jazzy/share/std_msgs/msg/Bool.idl",
@@ -55,8 +55,8 @@
     "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource/_msg.py.em",
     "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource/_srv_pkg_typesupport_entry_point.c.em",
     "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource/_srv.py.em",
-    "/home/felipe/Desktop/Robotica_Proy/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs/rosidl_adapter/lab1_msgs/msg/RobotAction.idl",
-    "/home/felipe/Desktop/Robotica_Proy/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs/rosidl_adapter/lab1_msgs/srv/PlayRecording.idl",
+    "/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs/rosidl_adapter/lab1_msgs/msg/RobotAction.idl",
+    "/home/jffg/Desktop/CargaBot/ROS2_Software/ros2_ws/build/lab1_msgs/rosidl_adapter/lab1_msgs/srv/PlayRecording.idl",
     "/opt/ros/jazzy/share/std_msgs/msg/Bool.idl",
     "/opt/ros/jazzy/share/std_msgs/msg/Byte.idl",
     "/opt/ros/jazzy/share/std_msgs/msg/ByteMultiArray.idl",
