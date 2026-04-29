@@ -4,6 +4,8 @@
 
 An open-source, differential drive forklift robot designed to identify, pick up, and classify colored cubes (green, red, blue) using computer vision. By transitioning from a standard mobile base to a forklift architecture, CargaBot provides superior mechanical stability and simplified vertical positioning compared to traditional multi-degree-of-freedom robotic arms.
 
+![](https://github.com/fgutep/CargaBot/blob/main/img/CargaBot.png?raw=true)
+
 ## Project Goals
 
 - **Accessible**: Built using affordable components like the Raspberry Pi 5, ESP32 microcontrollers, and fully 3D-printable parts.
