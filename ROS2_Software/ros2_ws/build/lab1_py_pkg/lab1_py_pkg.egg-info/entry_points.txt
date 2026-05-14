@@ -1,4 +1,5 @@
 [console_scripts]
+motion_controller = lab1_py_pkg.motion_controller:main
 serial_bridge_zero = lab1_py_pkg.serial_bridge_zero:main
 turtle_bot_interface = lab1_py_pkg.turtle_bot_interface:main
 turtle_bot_player = lab1_py_pkg.turtle_bot_player:main

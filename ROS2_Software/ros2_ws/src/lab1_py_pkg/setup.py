@@ -29,6 +29,7 @@ setup(
             "turtle_bot_player = lab1_py_pkg.turtle_bot_player:main",
             'turtle_bot_serial_bridge = lab1_py_pkg.turtle_bot_serial_bridge:main',
             'serial_bridge_zero = lab1_py_pkg.serial_bridge_zero:main',
+            'motion_controller = lab1_py_pkg.motion_controller:main',
         ],
     },
 )
