@@ -12,7 +12,6 @@ Cambios respecto al bridge original:
   - Reconexión automática si se pierde el serial
 """
 
-from lab1_msgs import msg
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import Twist
@@ -45,10 +44,6 @@ class CargaBotSerialBridge(Node):
             self.cmd_vel_callback,
             10
         )
-        # ── Watchdog: auto-stop if no cmd_vel received ─────────
-        self._last_cmd_time = time.time()
-        self._watchdog_timeout = 0.5  # seconds
-        self._watchdog_timer = self.create_timer(0.2, self._watchdog_cb)
 
         # ── Publishers ──────────────────────────────────────────────
         self.odom_pub    = self.create_publisher(Odometry, '/odom', 10)
@@ -96,7 +91,6 @@ class CargaBotSerialBridge(Node):
         física del robot. Aquí mandamos el v tal como lo publica ROS
         (positivo = adelante desde la perspectiva de ROS).
         """
-        self._last_cmd_time = time.time()
         self._serial_write({"v": msg.linear.x, "w": msg.angular.z})
 
     # ── LOOP DE LECTURA SERIAL ──────────────────────────────────────
@@ -204,12 +198,6 @@ class CargaBotSerialBridge(Node):
             except Exception:
                 pass
         super().destroy_node()
-
-    # ── WATCHDOG CALLBACK ───────────────────────────────────────────
-    def _watchdog_cb(self):
-        elapsed = time.time() - self._last_cmd_time
-        if elapsed > self._watchdog_timeout:
-            self._serial_write({"v": 0.0, "w": 0.0})
 
 
 def main(args=None):
