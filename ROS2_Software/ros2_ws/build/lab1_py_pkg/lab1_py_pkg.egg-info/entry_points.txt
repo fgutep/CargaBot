@@ -1,5 +1,7 @@
 [console_scripts]
+latest_motion_controller = lab1_py_pkg.latest_motion_controller:main
 motion_controller = lab1_py_pkg.motion_controller:main
+path_executor = lab1_py_pkg.cargabot_path_executor:main
 serial_bridge_zero = lab1_py_pkg.serial_bridge_zero:main
 turtle_bot_interface = lab1_py_pkg.turtle_bot_interface:main
 turtle_bot_player = lab1_py_pkg.turtle_bot_player:main

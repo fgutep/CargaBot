@@ -3,37 +3,48 @@
 CargaBot Motion Controller v2
 ==============================
 Nodo ROS2 de control de movimiento preciso para CargaBot.
-Expone un Service ROS2 para el path planner de la cámara.
+Usa std_msgs/String JSON — sin compilar .srv.
 
 Service:
-  /cargabot/execute  (lab1_py_pkg/CargaBotExecute)
+  /cargabot/execute  (std_srvs/SetBool no — usamos srv String)
 
-Suscripciones:
-  /odom              (nav_msgs/Odometry) — pose + heading IMU
+  REQUEST  topic: /cargabot/execute_req  (std_msgs/String)  — path planner → MC
+  RESPONSE topic: /cargabot/execute_res  (std_msgs/String)  — MC → path planner
 
-Publicaciones:
-  /turtlebot_cmdVel  (geometry_msgs/Twist) — hacia serial bridge
+  El path planner publica en /cargabot/execute_req y espera en /cargabot/execute_res.
+  Solo se procesa un comando a la vez (mutex).
 
-Parámetros:
-  linear_speed      float  0.15  m/s
-  angular_speed     float  0.30  rad/s  — bajo para reducir derrape
-  dist_factor       float  1.7277       — calibrado con cinta métrica
-  pos_tolerance     float  0.008 m
-  angle_tolerance   float  2.0   deg
-  settle_time       float  0.4   s
+REQUEST JSON:
+  {"cmd":"move",      "distance":0.50}
+  {"cmd":"rotate",    "angle":90.0}
+  {"cmd":"rotate_to", "heading":90.0}
+  {"cmd":"goto",      "x":1.0, "y":0.5, "heading":0.0}
+  {"cmd":"waypoints", "waypoints":[[x1,y1],[x2,y2],...], "heading":0.0}
+  {"cmd":"stop"}
 
-Uso desde path planner (Python):
-    import rclpy
-    from rclpy.node import Node
-    from lab1_py_pkg.srv import CargaBotExecute
+RESPONSE JSON:
+  {"success":true,  "message":"...", "x":0.0, "y":0.0, "heading":0.0}
+  {"success":false, "message":"error description"}
 
-    client = node.create_client(CargaBotExecute, '/cargabot/execute')
-    req = CargaBotExecute.Request()
-    req.cmd = 'move'; req.distance = 0.50
-    future = client.call_async(req)
-    # future.result().success / .message / .final_x / .final_y / .final_heading
+Parámetros ROS2:
+  linear_speed    0.15  m/s
+  angular_speed   0.30  rad/s
+  dist_factor     1.7277
+  pos_tolerance   0.008 m
+  angle_tolerance 2.0   deg
+  settle_time     0.4   s
+
+Uso desde path planner:
+  publisher  = node.create_publisher(String, '/cargabot/execute_req', 10)
+  subscriber = node.create_subscription(String, '/cargabot/execute_res', cb, 10)
+
+  req = String()
+  req.data = json.dumps({"cmd": "move", "distance": 0.50})
+  publisher.publish(req)
+  # cb recibe: {"success": true, "message": "...", "x": ..., "y": ..., "heading": ...}
 """
 
+import json
 import math
 import threading
 import time
@@ -42,14 +53,7 @@ import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import Twist
 from nav_msgs.msg import Odometry
-
-# Import del service generado por colcon
-# Si falla el import, el nodo imprime instrucciones y sale
-try:
-    from lab1_py_pkg.srv import CargaBotExecute
-    SRV_AVAILABLE = True
-except ImportError:
-    SRV_AVAILABLE = False
+from std_msgs.msg import String
 
 
 # ── Utilidades angulares ──────────────────────────────────────────────
@@ -89,36 +93,25 @@ class MotionController(Node):
         self._pose_lock = threading.Lock()
         self._x  = 0.0
         self._y  = 0.0
-        self._th = 0.0  # radianes, viene del IMU via odom
+        self._th = 0.0
+
+        # ── Mutex: solo un movimiento a la vez ───────────────────────
+        self._motion_lock = threading.Lock()
 
         # ── Publishers / Subscribers ─────────────────────────────────
-        self._cmd_pub = self.create_publisher(Twist, 'turtlebot_cmdVel', 10)
-        self.create_subscription(Odometry, '/odom', self._odom_cb, 10)
+        self._cmd_pub = self.create_publisher(Twist,  'turtlebot_cmdVel',       10)
+        self._res_pub = self.create_publisher(String, '/cargabot/execute_res',  10)
 
-        # ── Service ─────────────────────────────────────────────────
-        if not SRV_AVAILABLE:
-            self.get_logger().error(
-                "lab1_py_pkg.srv.CargaBotExecute not found.\n"
-                "Agrega CargaBotExecute.srv a tu paquete y corre 'colcon build'.\n"
-                "Ver: /srv/CargaBotExecute.srv"
-            )
-            return
-
-        self._srv = self.create_service(
-            CargaBotExecute,
-            '/cargabot/execute',
-            self._execute_cb
-        )
-
-        # Mutex para que solo un movimiento corra a la vez
-        self._motion_lock = threading.Lock()
+        self.create_subscription(Odometry, '/odom',                self._odom_cb,    10)
+        self.create_subscription(String,   '/cargabot/execute_req', self._execute_cb, 10)
 
         self.get_logger().info(
             f"CargaBot Motion Controller ready\n"
-            f"  dist_factor    = {self.dist_factor}\n"
-            f"  linear_speed   = {self.linear_speed} m/s\n"
-            f"  angular_speed  = {self.angular_speed} rad/s\n"
-            f"  Service        = /cargabot/execute"
+            f"  dist_factor  = {self.dist_factor}\n"
+            f"  linear_speed = {self.linear_speed} m/s\n"
+            f"  angular_speed= {self.angular_speed} rad/s\n"
+            f"  REQ  topic   = /cargabot/execute_req\n"
+            f"  RES  topic   = /cargabot/execute_res"
         )
 
     # ── ODOMETRY ─────────────────────────────────────────────────────
@@ -136,103 +129,105 @@ class MotionController(Node):
         with self._pose_lock:
             return self._x, self._y, self._th
 
-    # ── SERVICE CALLBACK ─────────────────────────────────────────────
+    # ── EXECUTE CALLBACK ─────────────────────────────────────────────
 
-    def _execute_cb(self, request, response):
+    def _execute_cb(self, msg: String):
         """
-        Punto de entrada del path planner.
-        Bloquea hasta completar el movimiento (síncrono).
+        Recibe comando JSON del path planner.
+        Corre en hilo separado para no bloquear el spin.
         """
-        cmd = request.cmd.strip().lower()
-        self.get_logger().info(f"[execute] cmd='{cmd}'")
+        try:
+            req = json.loads(msg.data)
+        except json.JSONDecodeError as e:
+            self._respond(False, f"Invalid JSON: {e}")
+            return
+
+        # Corre en hilo para no bloquear el executor de ROS
+        threading.Thread(target=self._execute, args=(req,), daemon=True).start()
+
+    def _execute(self, req: dict):
+        cmd = req.get("cmd", "").strip().lower()
+        self.get_logger().info(f"[execute] {json.dumps(req)}")
 
         with self._motion_lock:
             try:
                 if cmd == "stop":
                     self._stop()
-                    response.success = True
-                    response.message = "Stopped"
+                    self._respond(True, "stopped")
 
                 elif cmd == "move":
-                    ok, msg = self._do_move(request.distance)
-                    response.success = ok
-                    response.message = msg
+                    ok, msg = self._do_move(float(req.get("distance", 0)))
+                    self._respond(ok, msg)
 
                 elif cmd == "rotate":
-                    ok, msg = self._do_rotate(deg2rad(request.angle))
-                    response.success = ok
-                    response.message = msg
+                    ok, msg = self._do_rotate(deg2rad(float(req.get("angle", 0))))
+                    self._respond(ok, msg)
 
                 elif cmd == "rotate_to":
-                    snapped = nearest_octal(request.heading)
+                    snapped = nearest_octal(float(req.get("heading", 0)))
                     _, _, th = self._pose()
                     delta = normalize_angle(deg2rad(snapped) - th)
                     ok, msg = self._do_rotate(delta)
-                    response.success = ok
-                    response.message = f"rotate_to {snapped}° — {msg}"
+                    self._respond(ok, f"rotate_to {snapped}°: {msg}")
 
                 elif cmd == "goto":
                     ok, msg = self._do_goto(
-                        request.x, request.y, request.heading)
-                    response.success = ok
-                    response.message = msg
+                        float(req.get("x", 0)),
+                        float(req.get("y", 0)),
+                        req.get("heading")      # None = no final rotation
+                    )
+                    self._respond(ok, msg)
 
                 elif cmd == "waypoints":
-                    ok, msg = self._do_waypoints(
-                        request.waypoints, request.heading)
-                    response.success = ok
-                    response.message = msg
+                    wps = req.get("waypoints", [])  # [[x1,y1], [x2,y2], ...]
+                    hdg = req.get("heading")
+                    ok, msg = self._do_waypoints(wps, hdg)
+                    self._respond(ok, msg)
 
                 else:
-                    response.success = False
-                    response.message = f"Unknown command: '{cmd}'"
+                    self._respond(False, f"unknown command: '{cmd}'")
 
             except Exception as e:
                 self._stop()
-                response.success = False
-                response.message = f"Exception: {e}"
-                self.get_logger().error(f"[execute] {e}")
+                self._respond(False, f"exception: {e}")
+                self.get_logger().error(f"[execute] exception: {e}")
 
-        # Pose final
+    def _respond(self, success: bool, message: str):
         x, y, th = self._pose()
-        response.final_x       = x
-        response.final_y       = y
-        response.final_heading = rad2deg(th) % 360
-
-        self.get_logger().info(
-            f"[execute] done — success={response.success} "
-            f"pos=({x:.3f},{y:.3f}) hdg={response.final_heading:.1f}°"
-        )
-        return response
+        payload = {
+            "success": success,
+            "message": message,
+            "x":       round(x, 4),
+            "y":       round(y, 4),
+            "heading": round(rad2deg(th) % 360, 2),
+        }
+        msg = String(); msg.data = json.dumps(payload)
+        self._res_pub.publish(msg)
+        self.get_logger().info(f"[response] {json.dumps(payload)}")
 
     # ── PRIMITIVAS DE MOVIMIENTO ─────────────────────────────────────
 
-    def _do_move(self, distance_m: float) -> tuple[bool, str]:
-        """
-        Mueve distance_m metros (positivo=adelante).
-        Aplica dist_factor de calibración.
-        Rampa de desaceleración en los últimos 3 cm.
-        """
+    def _do_move(self, distance_m: float) -> tuple:
         if abs(distance_m) < 0.001:
             return True, "distance too small, skipped"
 
         corrected = distance_m / self.dist_factor
         x0, y0, _ = self._pose()
-        v = math.copysign(self.linear_speed, corrected)
-        self._send_vel(v, 0.0)
+        self._send_vel(math.copysign(self.linear_speed, corrected), 0.0)
 
         timeout = abs(corrected) / self.linear_speed * 3.0 + 2.0
         t0 = time.time()
 
         while time.time() - t0 < timeout:
             x, y, _ = self._pose()
-            traveled = math.sqrt((x-x0)**2 + (y-y0)**2)
+            traveled  = math.sqrt((x - x0)**2 + (y - y0)**2)
             remaining = abs(corrected) - traveled
 
-            # Rampa: últimos 3 cm
+            # Rampa desaceleración: últimos 3 cm
             if 0 < remaining < 0.03:
                 factor = max(0.25, remaining / 0.03)
-                self._send_vel(math.copysign(self.linear_speed * factor, corrected), 0.0)
+                self._send_vel(
+                    math.copysign(self.linear_speed * factor, corrected), 0.0)
 
             if traveled >= abs(corrected) - self.pos_tolerance:
                 self._stop()
@@ -242,22 +237,16 @@ class MotionController(Node):
             time.sleep(0.02)
 
         self._stop()
-        return False, f"move timeout after {time.time()-t0:.1f}s"
+        return False, f"move timeout ({time.time()-t0:.1f}s)"
 
-    def _do_rotate(self, angle_rad: float) -> tuple[bool, str]:
-        """
-        Rota angle_rad radianes (positivo=CCW).
-        Usa IMU para medir ángulo real — no necesita angle_factor.
-        Acumula delta ciclo a ciclo para soportar >180°.
-        """
+    def _do_rotate(self, angle_rad: float) -> tuple:
         if abs(angle_rad) < deg2rad(1.0):
             return True, "angle too small, skipped"
 
         _, _, th0 = self._pose()
-        last_th      = th0
-        accum        = 0.0
-        w = math.copysign(self.angular_speed, angle_rad)
-        self._send_vel(0.0, w)
+        last_th   = th0
+        accum     = 0.0
+        self._send_vel(0.0, math.copysign(self.angular_speed, angle_rad))
 
         timeout = abs(angle_rad) / self.angular_speed * 3.0 + 3.0
         t0 = time.time()
@@ -270,58 +259,49 @@ class MotionController(Node):
 
             remaining = abs(angle_rad) - abs(accum)
 
-            # Rampa: últimos 10°
+            # Rampa desaceleración: últimos 10°
             if 0 < remaining < deg2rad(10):
                 factor = max(0.2, remaining / deg2rad(10))
-                self._send_vel(0.0, math.copysign(self.angular_speed * factor, angle_rad))
+                self._send_vel(
+                    0.0, math.copysign(self.angular_speed * factor, angle_rad))
 
             if abs(accum) >= abs(angle_rad) - deg2rad(self.angle_tolerance):
                 self._stop()
                 time.sleep(self.settle_time)
-                return True, f"rotated {rad2deg(accum):.1f}° (target {rad2deg(angle_rad):.1f}°)"
+                return True, (
+                    f"rotated {rad2deg(accum):.1f}° "
+                    f"(target {rad2deg(angle_rad):.1f}°)"
+                )
 
             time.sleep(0.02)
 
         self._stop()
-        return False, f"rotate timeout — accum={rad2deg(accum):.1f}° target={rad2deg(angle_rad):.1f}°"
+        return False, (
+            f"rotate timeout — accum={rad2deg(accum):.1f}° "
+            f"target={rad2deg(angle_rad):.1f}°"
+        )
 
-    def _do_goto(self, tx: float, ty: float,
-                 heading_deg: float = None) -> tuple[bool, str]:
-        """
-        Navega al punto (tx, ty) con movimientos ortogonales:
-        1. Rota hacia el punto
-        2. Avanza la distancia
-        3. Rota al heading final si se especifica (snappea a octal)
-        """
+    def _do_goto(self, tx: float, ty: float, heading_deg=None) -> tuple:
         x, y, th = self._pose()
-        dx = tx - x
-        dy = ty - y
+        dx = tx - x; dy = ty - y
         dist = math.sqrt(dx**2 + dy**2)
 
-        if dist < self.pos_tolerance:
-            # Ya estamos en el punto — solo rotar al heading si se pide
-            if heading_deg is not None:
-                snapped = nearest_octal(heading_deg)
-                delta   = normalize_angle(deg2rad(snapped) - th)
-                ok, msg = self._do_rotate(delta)
-                return ok, f"already at point, rotated to {snapped}°: {msg}"
-            return True, "already at target point"
+        if dist > self.pos_tolerance:
+            # 1. Rotar hacia el punto
+            target_angle = math.atan2(dy, dx)
+            delta = normalize_angle(target_angle - th)
+            ok, msg = self._do_rotate(delta)
+            if not ok:
+                return False, f"rotate to point failed: {msg}"
 
-        # 1. Rotar hacia el punto objetivo
-        target_angle = math.atan2(dy, dx)
-        delta = normalize_angle(target_angle - th)
-        ok, msg = self._do_rotate(delta)
-        if not ok:
-            return False, f"rotate to point failed: {msg}"
+            # 2. Avanzar
+            ok, msg = self._do_move(dist)
+            if not ok:
+                return False, f"move failed: {msg}"
 
-        # 2. Avanzar
-        ok, msg = self._do_move(dist)
-        if not ok:
-            return False, f"move to point failed: {msg}"
-
-        # 3. Rotar al heading final si se especifica
+        # 3. Heading final (opcional)
         if heading_deg is not None:
-            snapped = nearest_octal(heading_deg)
+            snapped = nearest_octal(float(heading_deg))
             _, _, th_now = self._pose()
             delta = normalize_angle(deg2rad(snapped) - th_now)
             ok, msg = self._do_rotate(delta)
@@ -329,21 +309,22 @@ class MotionController(Node):
                 return False, f"final rotate failed: {msg}"
 
         x, y, _ = self._pose()
-        return True, f"goto ({tx:.2f},{ty:.2f}) done — actual ({x:.2f},{y:.2f})"
+        return True, f"goto ({tx:.2f},{ty:.2f}) → actual ({x:.2f},{y:.2f})"
 
-    def _do_waypoints(self, waypoints, final_heading_deg: float = None) -> tuple[bool, str]:
-        """
-        Ejecuta una lista de waypoints secuencialmente.
-        Cada waypoint es un geometry_msgs/Point (usa x,y).
-        """
+    def _do_waypoints(self, waypoints: list, final_heading=None) -> tuple:
         if not waypoints:
             return False, "empty waypoints list"
 
         for i, wp in enumerate(waypoints):
-            # Heading final solo en el último waypoint
-            hdg = final_heading_deg if i == len(waypoints) - 1 else None
-            ok, msg = self._do_goto(wp.x, wp.y, hdg)
-            self.get_logger().info(f"[waypoints] {i+1}/{len(waypoints)}: {msg}")
+            # Cada waypoint es [x, y] o {"x":..., "y":...}
+            if isinstance(wp, (list, tuple)):
+                wx, wy = float(wp[0]), float(wp[1])
+            else:
+                wx, wy = float(wp.get("x", 0)), float(wp.get("y", 0))
+
+            hdg = final_heading if i == len(waypoints) - 1 else None
+            ok, msg = self._do_goto(wx, wy, hdg)
+            self.get_logger().info(f"[wp {i+1}/{len(waypoints)}] {msg}")
             if not ok:
                 return False, f"waypoint {i+1} failed: {msg}"
 

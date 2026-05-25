@@ -98,11 +98,13 @@ class MotionController(Node):
         self.state_lock = threading.Lock()
 
         # Objetivo activo
-        self.goal_distance = 0.0   # metros
-        self.goal_angle    = 0.0   # radianes
+        self.goal_distance = 0.0
+        self.goal_angle    = 0.0
         self.start_x       = 0.0
         self.start_y       = 0.0
         self.start_th      = 0.0
+        self.last_th       = 0.0   # para acumulación de ángulo ciclo a ciclo
+        self.accum_angle   = 0.0   # ángulo acumulado en rotación actual
 
         # Cola de comandos (thread-safe)
         self._cmd_queue  = []
@@ -245,17 +247,15 @@ class MotionController(Node):
                 return
             self.state = self.ROTATING
 
-        x, y, th = self._get_pose()
-        self.start_th = th
-        # Aplica factor de calibración angular
-        self.goal_angle = angle_rad / self.angle_factor
+        _, _, th = self._get_pose()
+        self.start_th      = th
+        self.last_th       = th       # para acumular delta sin normalize
+        self.accum_angle   = 0.0      # ángulo acumulado real
+        self.goal_angle    = angle_rad  # IMU es preciso, no necesita angle_factor
 
         w = math.copysign(self.angular_speed, self.goal_angle)
         self._send_vel(0.0, w)
-        self.get_logger().info(
-            f"Rotating {rad2deg(angle_rad):.1f}° "
-            f"(corrected: {rad2deg(self.goal_angle):.1f}°)"
-        )
+        self.get_logger().info(f"Rotating {rad2deg(angle_rad):.1f}°")
         self._publish_status("ROTATING", {"angle_deg": rad2deg(angle_rad)})
 
     # ── CONTROL LOOP ─────────────────────────────────────────────────
@@ -309,19 +309,28 @@ class MotionController(Node):
                 self._enter_settle(self.MOVING)
 
         elif current_state == self.ROTATING:
-            rotated = normalize_angle(th - self.start_th)
-            remaining = abs(self.goal_angle) - abs(rotated)
+            # Acumular delta de ángulo ciclo a ciclo — evita el problema de normalize
+            delta = normalize_angle(th - self.last_th)
+            self.accum_angle += delta
+            self.last_th      = th
+
+            self.get_logger().info(
+                f"ROT: th={rad2deg(th):.1f}° delta={rad2deg(delta):.2f}° "
+                f"accum={rad2deg(self.accum_angle):.1f}° goal={rad2deg(self.goal_angle):.1f}°"
+            )
+
+            remaining = abs(self.goal_angle) - abs(self.accum_angle)
 
             # Rampa de desaceleración: últimos 10°
-            if remaining < deg2rad(10) and remaining > 0:
+            if 0 < remaining < deg2rad(10):
                 factor = max(0.2, remaining / deg2rad(10))
                 w = math.copysign(self.angular_speed * factor, self.goal_angle)
                 self._send_vel(0.0, w)
 
-            if abs(rotated) >= abs(self.goal_angle) - deg2rad(self.angle_tolerance):
+            if abs(self.accum_angle) >= abs(self.goal_angle) - deg2rad(self.angle_tolerance):
                 self._stop_motors()
                 self.get_logger().info(
-                    f"Rotate done. Rotated: {rad2deg(rotated):.1f}° "
+                    f"Rotate done. Rotated: {rad2deg(self.accum_angle):.1f}° "
                     f"/ target: {rad2deg(self.goal_angle):.1f}°"
                 )
                 self._enter_settle(self.ROTATING)

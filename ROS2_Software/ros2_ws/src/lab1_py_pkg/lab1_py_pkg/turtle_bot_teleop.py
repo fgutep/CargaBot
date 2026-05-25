@@ -85,23 +85,23 @@ class TurtleBotTeleopNode(Node):
                     last_key_time = current_time
                     
                     if key == 'w':
-                        twist.linear.x = 0.5
+                        twist.linear.x = 1.5
                         twist.angular.z = 0.0
                         self.current_action = 'w'
                         
                     elif key == 's':
-                        twist.linear.x = -0.5
+                        twist.linear.x = -1.5
                         twist.angular.z = 0.0
                         self.current_action = 's'
                         
                     elif key == 'a':
                         twist.linear.x = 0.0
-                        twist.angular.z = 0.5
+                        twist.angular.z = 1.5
                         self.current_action = 'a'
                         
                     elif key == 'd':
                         twist.linear.x = 0.0
-                        twist.angular.z = -0.5
+                        twist.angular.z = -1.5
                         self.current_action = 'd'
                         
                     elif key == ' ':

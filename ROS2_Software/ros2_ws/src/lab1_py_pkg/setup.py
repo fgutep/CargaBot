@@ -30,6 +30,8 @@ setup(
             'turtle_bot_serial_bridge = lab1_py_pkg.turtle_bot_serial_bridge:main',
             'serial_bridge_zero = lab1_py_pkg.serial_bridge_zero:main',
             'motion_controller = lab1_py_pkg.motion_controller:main',
+            'latest_motion_controller = lab1_py_pkg.latest_motion_controller:main',
+            'path_executor = lab1_py_pkg.cargabot_path_executor:main',
         ],
     },
 )

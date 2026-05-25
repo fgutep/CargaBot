@@ -10,6 +10,8 @@ setup.py
 ../../build/lab1_py_pkg/lab1_py_pkg.egg-info/zip-safe
 lab1_py_pkg/__init__.py
 lab1_py_pkg/cargabot_motion_tui.py
+lab1_py_pkg/cargabot_path_executor.py
+lab1_py_pkg/latest_motion_controller.py
 lab1_py_pkg/motion_controller.py
 lab1_py_pkg/serial_bridge_zero.py
 lab1_py_pkg/turtle_bot_interface.py
