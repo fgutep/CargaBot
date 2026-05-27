@@ -1,4 +1,5 @@
 /home/felipe/Desktop/Robotica_Proy/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/python3.12/site-packages/lab1_py_pkg/latest_motion_controller.py
+/home/felipe/Desktop/Robotica_Proy/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/python3.12/site-packages/lab1_py_pkg/cargabot_safety_guardian.py
 /home/felipe/Desktop/Robotica_Proy/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/python3.12/site-packages/lab1_py_pkg/turtle_bot_serial_bridge.py
 /home/felipe/Desktop/Robotica_Proy/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/python3.12/site-packages/lab1_py_pkg/cargabot_path_executor.py
 /home/felipe/Desktop/Robotica_Proy/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/python3.12/site-packages/lab1_py_pkg/turtle_bot_teleop.py
@@ -9,6 +10,7 @@
 /home/felipe/Desktop/Robotica_Proy/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/python3.12/site-packages/lab1_py_pkg/serial_bridge_zero.py
 /home/felipe/Desktop/Robotica_Proy/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/python3.12/site-packages/lab1_py_pkg/turtle_bot_player.py
 /home/felipe/Desktop/Robotica_Proy/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/python3.12/site-packages/lab1_py_pkg/__pycache__/latest_motion_controller.cpython-312.pyc
+/home/felipe/Desktop/Robotica_Proy/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/python3.12/site-packages/lab1_py_pkg/__pycache__/cargabot_safety_guardian.cpython-312.pyc
 /home/felipe/Desktop/Robotica_Proy/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/python3.12/site-packages/lab1_py_pkg/__pycache__/turtle_bot_serial_bridge.cpython-312.pyc
 /home/felipe/Desktop/Robotica_Proy/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/python3.12/site-packages/lab1_py_pkg/__pycache__/cargabot_path_executor.cpython-312.pyc
 /home/felipe/Desktop/Robotica_Proy/CargaBot/ROS2_Software/ros2_ws/install/lab1_py_pkg/lib/python3.12/site-packages/lab1_py_pkg/__pycache__/turtle_bot_teleop.cpython-312.pyc
